@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--sadece unlem yada doc yazilarak html yapisi olusturulur-->
+<html lang="en">
+  <head>
+    <!--bu meta kısımı olusturulan dosyaya iliskin bilgilerden olusur. esasinda arama motorlari tarafindan yapilan aramalarda cok onem arzeder-->
+    <meta charset="UTF-8" />
+    <!--bu bolum default olarak geliyor. kod dili degistirilebilir. türkçe karakter vs kullanılıyor ise mesela kesinlikle bu şekilde olması lazım -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--olusturulan sayfanin boyutu icin - hem telefon hem de tablet gibi farklı yerlerde uyumlu çalışması için yazılır-->
+    <meta name="title" content="Clarusway Kursları" />
+    <!-- burda sitenin başlığı yazılır. bunu sistem görür. -->
+    <meta http-equiv="refresh" content="30" />
+    <!-- bu kod ile site 5 sn de bir sayfa yenile yapar -->
+    <meta name="description" content="Her turlu arac kiralama isleri" />
+    <!--1- content icerisine aciklama ekleniyor.sayfanın özetini burda açıklamalıyız. 2- Ortalama 150-160 karakterden fazla  yazmamak gerekiyor...-->
+    <meta name="keywords" content="arac kiralama,vip arac" />
+    <!--aramalarda bu anahtar kelimeler sitenin daha ön plana çıkmasını sağlar. bu bolum arama motorlari tarifindan dikkat edilen kisim,tekrar olmamalıdır. Eğer çok tekrarlama olur ise google siteyi kandırma amaçlı değerlendiriyor ve en altlara gönderiyor.-->
+    <meta name="author" content="Clarusway Full Stack Team" />
+    <!--siteyi kimin dizayn ettiğini gösterir. sadece browser bu bilgiyi gorecek-->
+    <title>Lessons</title>
+    <!-- bu etiket içine 50-60 karakter arası olması lazım. 70 karakteri kesinlikle geçmemelidir. -->
+    <link rel="stylesheet" href="index.css" />
+    <!--baska bir dosya eklemeye yarar.css dosyasi da bu sekilde external olarak eklenir.-->
+    <link rel="shortcut icon" href="images/gfavicon.png" type="image/png" />
+    <!--bu sekilde acilan pencenin browseda gorunen kismina bir icon ekledik-->
+    <!-- favicon için sonunda png,gif,x-icon uzantılı dosyalar eklenebilir -->
+    <style>
+      /* burası INTERNAL bir değişkliktir */
+      h1 {
+        color: red;
+        background-color: rgb(255, 181, 85);
+      }
+
+      h2 {
+        color: blue;
+        background-color: rgb(255, 181, 85);
+      }
+    </style>
+    <!-- CSS değişklikleri üç şekilde olur.
+    1- External CSS : Direk ayrı bir CSS dosyası içinde yapılan değşikilikler
+    2- Internal CSS : HTML içinde HEAD başlığı altında STYLE tagı açılarak yapılan değişiklikler
+    3- Inline CSS : HTML içindeki satırlar arasına STYLE tagi açılarak yapılan değşikilikler
+    öncelik sıralaması INLINE > INTERNAL > EXTERNAL
+   -->
+  </head>
+
+  <body>
+    <!-- Başlık tagleri çok önemlidir. normal bir P tagi ile aynı büyüklüğü vererek de aynı şekle ulaşabilirsiniz. Ama başlık arama motorları  tarafından dikkate alınır. Sayfanın düzenini belirler. Dikkat çekmesini sağlar. o yüzden kullanılmalıdır. -->
+    <h1>Hello World</h1>
+    <h1>Clarusway Fullstack</h1>
+    <h2>Clarusway Fullstack</h2>
+    <h3>Clarusway Fullstack</h3>
+    <h4>Clarusway Fullstack</h4>
+    <h5>Clarusway Fullstack</h5>
+    <h6>Clarusway Fullstack</h6>
+    <p style="color: rgb(238, 30, 210);"> <!-- burası INLINE bir değişkliktir  -->
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+      veritatis, dolore explicabo obcaecati culpaitaque sed nesciunt expedita
+      placeat a atque illum quisquam. Adipisci ea voluptate consequatur alias
+      vero molestiae.
+    </p>
+    <p style="background-color: rgb(35, 145, 63);"> <!-- burası INLINE bir değişkliktir  -->
+      Neden kullanmalıyız? Emmet’in temel mantığı, yazılımcıya kodlama yaparken
+      zaman kazandırmasıdır. Bu yüzden çoğu yazılımcı text editöründe Emmet
+      eklentisini kullanır. bir örnekle açıklayacak olursak örneğin
+    </p>
+  </body>
+</html>
