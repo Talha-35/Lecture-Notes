@@ -1,0 +1,48 @@
+body {
+    border: 5px solid red;
+}
+
+#list1 {
+    list-style-type: none;
+    /* Liste öğesi işaretleyici türünü belirler. */
+
+    list-style-position: inside;
+    /* Liste maddelik belirteçlerin pozisyonunu ayarlar. Diraz dışarı veya içeri doğru konumu değişir*/
+}
+
+/* #list1 li::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    background-image: url("../../EXCERSİZES/images/Aşk.jpg");
+    Bir imge ile bir işaretçi için kullanılabilir.
+} */
+
+#list1 li:before {
+    /* Bir şekilde işaretçi özel kullanılabilir. */
+    content: "\1F33A";
+    color: red;
+}
+
+#list2 {
+    border: 2px solid rgb(46, 116, 55);
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+
+
+#list4 {
+    list-style-image: url("./sqpurple.gif");
+}
+
+
+#list5 {
+    list-style: upper-latin;
+    list-style-position: outside;
+}
+
+
+Shorthand kullanımı aşağıdadır ????

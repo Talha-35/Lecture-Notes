@@ -1,0 +1,59 @@
+body{
+  margin: 50px;
+}
+
+table, th, td {/* bu örnek, <table> ve <th>, öğeler için mavi bir sınır belirtir : */
+    border: 1px solid blue;
+  }
+
+  table{
+    border: 5px solid rgb(9, 219, 44);
+    border-collapse:collapse;   /*  tablo sınırları ayarlar: */   
+    border-spacing: px px;  
+    /* mesela buraya 25px 25px diyerek hücreler arasına boşluk verilebilir. Bu seperate özelliğinde uygulanır. */
+    width: 100%;  /*  tablo genişliğini ayarlar: */
+    empty-cells: ; 
+    /* HİDE yazar iseniz : bu seperate özelliğinde uygulanır. içerdeki hücrede yazı yok ise o hücreyi gizler */
+    table-layout: ;
+    /* bu eleement sayesind e hücre içinde düzen sağlanabilir */
+  }
+  th{
+    border: 5px solid red;
+    height: 50px; /*  Yükesekliği ayarlar: */
+    text-align-last: center; /*  Kutu içindeki yatay konumu ayarlıyor*/
+    vertical-align: bottom;/*  Kutu içindeki dikey onumu ayarlıyor */
+    background-color: #4CAF50; /*  öğelerinin arka plan rengini ve metin rengini belirlemek için: */
+    color: white;
+    
+  }
+
+  td {
+    border: 5px solid rgb(32, 8, 248); /* bu örnek, <td> için kırmızı bir sınır belirtir : */
+    text-align: center;     /* Yatay hizalama orta /sol veya sol*/
+    vertical-align:middle;  /* Dikey hizalama orta /sol veya sol*/
+    height: 30px;
+    padding: 15px;  /*  Bir tablodaki sınır ve içerik arasındaki boşluğu kontrol etmek için */
+  }
+
+  td:hover {
+    background-color: rgb(9, 219, 44);
+  }
+
+  tr:hover {
+    background-color: red; /*  Fareyle üzerine gelindiğinde <tr>tablo satırlarını vurgulamak için: */
+  
+  } 
+
+  caption {    /* başlığı alta veya sona alabiliyoruz */
+    caption-side: bottom;
+    font-weight: bold;
+    font-size: 20pt;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ac9edf; /* tek çift ayrımı yaparak şekil veriyor. yani bir atlayarak */
+  }   
+
+
+  
+ 

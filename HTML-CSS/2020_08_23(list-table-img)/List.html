@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
-    <h1>Komple Uygulamalı Web Geliştirme Eğitimi</h1>
+    <link rel="stylesheet" href="list.css">
+</head>
+
+<body>
     <hr />
-    <h3>Front-end Development</h3>
-    <ul>
-      <li>Html5</li>
-      <ul style="list-style-type: circle;">
-        <li>Bölüm Tanıtımı</li>
-        <li>İlk Web Sayfam</li>
-      </ul>
-      <li>Css</li>
-      <li>Javascript</li>
-      <li>Bootstrap 4</li>
-      <ul style="list-style-type: square;">
-        <li>Bölüm Tanıtımı</li>
-        <li>Grid System</li>
-        <ol start="1" type="a">
-          <li>Ders 1</li>
-          <li>Ders 2</li>
-        </ol>
-      </ul>
-      <li>Jquery</li>
+    <h1>unordered list</h1>
+
+    <ul id="list1">
+        <li>MATEMATİK</li>
+        <li>KİMYA</li>
+        <li>FİZİK</li>
     </ul>
-    <br />
-    <h3>Back-end Development</h3>
-    <ol>
-      <li>Asp.net MVC Başlangıç</li>
-      <li>C= Programlama</li>
-      <li>Asp.net MVC Orta Seviye</li>
-      <li>Veritabanı Temelleri</li>
-      <li>Entitiy</li>
-      <li>Ling</li>
-      <li>Asp.Net</li>
-      <li>Asp net Identitiy</li>
-    </ol>
-  </body>
+    <ul id="list2">
+        <li>JAVA</li>
+        <li>PYTON</li>
+        <li>CSS</li>
+    </ul>
+    <hr />
+    <h1 id="hayde">ordered list</h1>
+    <ol start="5" type="A" id="list4">
+        <!-- bu şekilde yapar iseniz başlangıç sayısını veya nasıl başlayacağını(mesela harf ile) seçebilirsiniz -->
+        <!-- <ol reversed start="5" type="A"></ol>  yapsaydık o zaman tersten başlardı..-->
+        <li>item 1</li>
+        <ul id="list5">
+            <li>ders 1</li>
+            <li>ders 2</li>
+            <li>ders 3</li>
+        </ul>
+        <li>item 2</li>
+        <li>item 3</li>    
+    </ol>   
+
+    <h1 class="h2tags">def list</h1>
+    <dl>
+      <dt>fenerbahçe</dt>
+      <dd>istanbul takımıdır</dd>
+      <dt>göztepe</dt>
+      <dd>izmir takımıdır</dd>
+      <dt>ankaragücü</dt>
+      <dd>ankara takımıdır</dd>
+    <!-- </dl> -->
+   
+</body>
+
 </html>
