@@ -50,6 +50,10 @@ typeof : 123
 
 // b- STRING Veri Tipi
 
+// Uzun Kod Satırlarını Kırmak
+// ➤ En iyi okunabilirlik için, programcılar genellikle 80 karakterden uzun kod satırlarından kaçınmayı severler.
+// ➤ Bir JavaScript ifadesi bir satıra sığmazsa, onu kırmak için en iyi yer bir operatörden sonrasıdır.
+
 var name = "talha" ;
 var talha = "yakışıklı" ; 
 var kamil = "cool"  ;
@@ -74,6 +78,12 @@ console.log (yaz);
 çıktı : 
 String
 123
+
+// ➤ Dize içinde tırnak kullanmamız gerekirse, ters eğik çizgi (\) kaçış karakterini kullanabiliriz.
+
+var text = "He said, \"I am a new programmer.\"";
+console.log (text);
+çıktı : He said, "I am a new programmer."
 
 // c- BOOLEAN Veri Tipi
 // true veya false olarak sonuç verir. küçük harf ile yazmak lazım.
@@ -130,14 +140,36 @@ console.log("x : " + myVar_3)
 console.log("x : " + Boolean(myVar_4) )
 console.log("x : " + Boolean(s))
 
+örnek : 
+Boolean (3 > 2);     //return true
+Boolean (2 < 3);     //return true
+Boolean (2 > 3);     //return false 
+Boolean (2 == 3);    //return false 
+
+örnek:
+Boolean("Hello World");
+Boolean(5);
+Boolean(-5);
+Boolean("false");
+Boolean(3.14 + 8);   //All of these values return true
+
+öörnek : 
+Boolean("");
+Boolean(0);
+Boolean(-0);
+Boolean(null);
+var x;
+Boolean(x);   //All of these values return false
+
 // d- NULL
 
 var a = null ;
 console.log(a) ;
 console.log(typeof(a)); // type olarak object çıkar. bu  bir bug'dır. esasında bu bir hata gibi. Null hiçbirşey taşımadığını belirten bir değerdir.
 
-// d- UNDEFİNED
-// bu bir hatadır. aslında tanımlanmayan veri demektir
+// e- UNDEFİNED
+// ➤ anlamı"değer atanmamış" demektir.
+// bu bir hatadır. ➤ Bir değişken bildirilmiş ancak atanmamışsa, değeri tanımsızdır 
 
 var a = 
 console.log(a) ;
@@ -193,3 +225,27 @@ console.log(`myValue1 + myvalue2 : ${myValue1 - myValue2}`)
 çıktı
 myValue1 + myvalue2 : 107 typeof : String
 myValue1 + myvalue2 : 3    typeof : Number
+
+// GENEL BİR ÖRNEK : 
+
+örnek : 
+console.log ("1. " + typeof 0);
+console.log ("2. " + typeof (3,14));
+console.log ("3. " + typeof "hello");
+console.log ("4. " + typeof (7+8));
+console.log ("5. " + typeof "Oliver");
+console.log ("6. " + typeof "");
+console.log ("7. " + typeof true);
+console.log ("8. " + typeof (3>=2));
+var a;    // Value is undefined.
+console.log ("9. " + typeof a);
+çıktı : 
+1.number
+2.number
+3.string
+4.number
+5.string
+6.string
+7.boolean
+8.boolean
+9.undefined

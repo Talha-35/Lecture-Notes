@@ -8,11 +8,20 @@
 
 /* 
 Değişken tanımlama da ;
+➤ İsimler, harfler, rakamlar, alt çizgiler ve dolar işaretlerinden oluşabilir.
+➤ İlk karakter;    ● bir harf  ● alt çizgi ( _ )   ● dolar işareti ( $ ) olmak zorundadır
 ➤  sayı ile başlayamazsınız
 ➤  arada boşluk olamaz
 ➤  tire (-) kullanamazsınız. ama (_) alt çizgi kullanabilirsiniz
 ➤  ! vey ? gibi özel karakterler kullanılamaz. tek istisnası $ işaretidir.
 ➤  değişkende ikinci birişik kelimeye büyük harf ile başlamak iyi olur.
+➤ Atama her zaman sağdan sola gider. 
+var x=5;
+var y=7;
+y=x;
+Bu örnekte;
+● x = 5
+● y = 5
 ➤  satırdan sonra nıktalı virgül koymasanız da olur ama koymak daha iyi olur.
 ➤  değişken tanımlama da while, false, boolean, class vb reserve edilmiş değerler kullanılamaz. ama başına veya sonuna bir ek ekleyerek kullanabilirsiniz. Örn : isFalse vb....
 */
