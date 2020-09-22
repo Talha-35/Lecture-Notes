@@ -114,3 +114,59 @@ switch (userType) {
   default:
       console.log("giremezsiniz sistem sizi tanımlayamadı")
 }
+
+
+// TERNARY : 
+// komutları tek satırda yazmak için kullanılır
+
+const score = 55;
+
+if (score < 50) {
+    console.log("BAD")
+} else {
+    console.log("GOOD")
+}
+
+// bunu tek satırda yazmanın yolu aşağıdadır. Her ikisi de aynı sonucu verir
+
+score < 50 ? console.log("BAD") : console.log("GOOD")
+
+// veya
+
+const result = score < 50 ? "BAD" : "GOOD"
+console.log("result : ", result)
+
+
+
+// NULLISH : 
+// Bir değerin null olup olmadığını veya boş olup olmadığını kontrol eder.
+
+const myVariable = null; // eğer burada bir değer var ise onu yazıdırı yok ise de aşağıda yazan değeri yazdırır.
+
+const result = myVariable != null ? myVariable : 80;
+// daha kısa hali aşağıdadır.
+const result = myVariable ?? 80;
+
+console.log("result : ", result)
+
+örnek :
+
+const myVariable = "i ";
+
+const result = myVariable != " " ? myVariable : 80;
+// daha kısa hali
+// const result = myVariable ?? 80;
+console.log("result : ", result)
+çıktı : 
+i
+
+örnek :
+
+const myVariable = " ";
+
+const result = myVariable != " " ? myVariable : 80;
+// daha kısa hali
+// const result = myVariable ?? 80;
+console.log("result : ", result)
+çıktı : 
+80
