@@ -77,3 +77,40 @@ if (point > 80 ) {
     console.log("kaldın");
 }
 
+// SWITCH : 
+// bir değişkenin değerini birden çok değerle karşılaştırmak ve eşleşmeye göre bazı ifadeleri yürütmek için kullanılır.
+
+örnek :
+var name = 'Talha';
+switch (name) {
+  case 'Yusuf':
+    console.log(name + ' PYTON ustasıdır');
+    break;
+  case 'Eyüp':
+    console.log(name + ' JS ustasıdır');
+    break;
+  default:
+    console.log('Malesef, ' + name + "'yı tanımıyorum" + '.');
+}
+çıktı : 
+Malesef, Talha'yı tanımıyorum.
+
+// ⚜️ NOT: Break ifadesini atlarsanız, diğer döngüyü de yazmaya çalışır.
+
+örnek : 
+switch (userType) {
+  case "Admin":
+      console.log("Adminsin girbilirsiniz");
+      break;
+  case "employee":
+      console.log("kısıtlı giriş hakkınız var");
+      break;
+  case "Customer":
+      console.log("Menüye girebilirsiniz");
+      break;
+  case "Kind":
+      console.log("Çocuk girişi tespit edildi");
+      break;
+  default:
+      console.log("giremezsiniz sistem sizi tanımlayamadı")
+}
