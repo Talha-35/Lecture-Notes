@@ -6,6 +6,10 @@
 // ELSE IF :         İlk koşul false ise , test etmek için yeni bir koşul belirtmek için else kullan
 // SWITCH:          bir değeri birden çok değişkenle karşılaştırın.
 
+
+
+
+
 // IF STATEMENT:
 
 örnek :
@@ -24,6 +28,11 @@ if (age === 18 ){
 
 
 
+
+
+
+
+
 // ELSE
 
 örnek :
@@ -34,6 +43,11 @@ if (time < 8) {
     console.log("Good day.");
 }
 çıktı: Good day.
+
+
+
+
+
 
 
 // ELSE IF :  
@@ -77,6 +91,11 @@ if (point > 80 ) {
     console.log("kaldın");
 }
 
+
+
+
+
+
 // SWITCH : 
 // bir değişkenin değerini birden çok değerle karşılaştırmak ve eşleşmeye göre bazı ifadeleri yürütmek için kullanılır.
 
@@ -116,8 +135,12 @@ switch (userType) {
 }
 
 
+
+
+
+
 // TERNARY : 
-// komutları tek satırda yazmak için kullanılır
+// komutları tek satırda yazmak için kullanılır. ama komutunda tek satır olması gerekiyor.
 
 const score = 55;
 
@@ -133,8 +156,19 @@ score < 50 ? console.log("BAD") : console.log("GOOD")
 
 // veya
 
+const score = 55;
 const result = score < 50 ? "BAD" : "GOOD"
 console.log("result : ", result)
+
+// veya
+
+const score = 55;
+console.log(score < 50 ? "BAD" : "GOOD")
+
+
+
+
+
 
 
 
