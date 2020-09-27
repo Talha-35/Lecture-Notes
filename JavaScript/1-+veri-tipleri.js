@@ -134,9 +134,10 @@ myVar_3 = Boolean(-0) ;
 myVar_4 = null ;
 var s ;
 // bu çıktıların tamamı false çıkar
-console.log("x : " + myVar_1)
-console.log("x : " + myVar_2)
-console.log("x : " + myVar_3)
+console.log(`x : ${myVar_1} , type : ${typeof myVar_1}`)
+console.log(`x : ${myVar_2} , type : ${typeof myVar_2}`)
+console.log(`x : ${myVar_3} , type : ${typeof myVar_3}`)
+console.log(`x : ${myVar_4} , type : ${typeof myVar_4}`)
 console.log("x : " + Boolean(myVar_4) )
 console.log("x : " + Boolean(s))
 

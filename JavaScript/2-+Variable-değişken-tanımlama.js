@@ -9,19 +9,26 @@
 /* 
 Değişken tanımlama da ;
 ➤ İsimler, harfler, rakamlar, alt çizgiler ve dolar işaretlerinden oluşabilir.
-➤ İlk karakter;    ● bir harf  ● alt çizgi ( _ )   ● dolar işareti ( $ ) olmak zorundadır
+➤ İlk karakter;    ● bir harf (let person = " hasan")  ● alt çizgi ( _ ) (let _person = " hasan")   ● dolar işareti ( $ )(let $person = " hasan") olmak zorundadır
 ➤  sayı ile başlayamazsınız
 ➤  arada boşluk olamaz
 ➤  tire (-) kullanamazsınız. ama (_) alt çizgi kullanabilirsiniz
 ➤  ! vey ? gibi özel karakterler kullanılamaz. tek istisnası $ işaretidir.
-➤  değişkende ikinci birişik kelimeye büyük harf ile başlamak iyi olur.
+➤  değişkende ikinci birişik kelimeye büyük harf ile başlamak zorunlu değildir ama iyi olur. örnk : userName  örn : userPersonName
 ➤ Atama her zaman sağdan sola gider. 
 var x=5;
 var y=7;
-y=x;
+y=x;      => burada y x'in değerini alır. çünkü sağdan sola gider.
 Bu örnekte;
 ● x = 5
 ● y = 5
+--------
+Bu örnekte;
+var x=5;
+var y=7;
+x=y;        => burada y x'in değerini alır. çünkü sağdan sola gider.
+● x = 7
+● y = 7
 ➤  satırdan sonra nıktalı virgül koymasanız da olur ama koymak daha iyi olur.
 ➤  değişken tanımlama da while, false, boolean, class vb reserve edilmiş değerler kullanılamaz. ama başına veya sonuna bir ek ekleyerek kullanabilirsiniz. Örn : isFalse vb....
 */

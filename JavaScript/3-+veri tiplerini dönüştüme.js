@@ -41,20 +41,6 @@ console.log( typeof value)
 çıktı : 
 
 
-// çevirmek için ayrıca TO işlemi de yapılabilir
-
-örnek :
-value =(123).toString();
-console.log(value);
-çıktı : 
-123
-String
-
-örnek :
-value =(true).toString();
-çıktı : 
-true
-String
 
 // VERITIPLERINI SAYIYA ÇEVIRMEK IÇIN
 
@@ -83,28 +69,42 @@ console.log( typeof value)
 number
 
 örnek :
-value = Number(undefined)// tipi number olarak yazıyor ama ekde NAN yazar yani note a number demektir.
+value = Number(undefined)// tipi number olarak yazıyor ama ekde NAN yazar yani not a number demektir.
 console.log(value)
 console.log( typeof value)
 çıktı : 
 NaN
 number
 
-örnek :
-value = parseInt("3.14")
-console.log(value)
-console.log( typeof value)
-çıktı : 
-3
-number
+
+
+// toString() Metodu  - çevirmek için ayrıca TO işlemi de yapılabilir . kendisine tanımlanan değişken değerini string olarak değiştirerek döndürür.
 
 örnek :
-value = parseFloat("3.14")
-console.log(value)
-console.log( typeof value)
+value =(123).toString();
+console.log(value);
 çıktı : 
-3.14
-number
+123
+String
+
+örnek :
+value =(true).toString();
+çıktı : 
+true
+String
+
+örnek: 
+var sayi	=	22;
+var cikti	=	sayi.toString();
+
+document.write("sayi : " + sayi + "<br>");
+document.write("sayi veri türü : " + typeof(sayi) + "<br>");
+document.write("cikti : " + cikti + "<br>");
+document.write("cikti veri türü : " + typeof(cikti) + "<hr>");
+
+
+
+
 
 // --------------------------   EXTRA ---------------------------- 
 

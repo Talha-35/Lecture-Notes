@@ -105,12 +105,36 @@ city.forEach(function(i) {
 şehir adı : berlin
 şehir adı : tokyo
 
+// const numbers = [1,3,2,45,"ali",65,77,99,]
+
+// numbers.forEach((number,index) => {
+//     console.log("numbers :",number, "index :", index);
+// }
+// )
+
+// üstteki ve alttaki yazım aynıdır sadece aşağıdaki daha uzun yazımıdır.
+
+// numbers.forEach(logNumbers) ;
+
+//  function logNumbers(number) {
+//     console.log("numbers :",number)
+//  } 
 
 ---------------------------------------------------------------------------------------------------------------
 
 
 // MAP FONKSİYONU
 
+// çok sık kullanılıyor.
+// Foreach den farkı map de geri ye bir return etme olayı vardır. mesela liste içindeki herşeyi 2 ile çarp  dersin map de çarpar geri döner ama foreach de dönmez.
+
+// const numbers = [1,3,2,45,"ali",65,77,99,]
+
+// newNumbers = numbers.map((num) => {
+//     return num * 2
+// });
+
+// console.log(newNumbers);
 
 const users = [
   {name : "mustafa", age:25 },
@@ -123,6 +147,30 @@ const names = users.map(function(i){
 })
 çıktı : 
 (3) ['mustafa', 'ayşe', 'sophia']
+
+// ================================================ 🔥
+
+
+// << MAP vs FOREACH farkı >>
+
+
+// const users = [
+//     { id: 0, name: "Jack", age: 20 },
+//     { id: 1, name: "Milton", age: 34 },
+//     { id: 2, name: "Arthur", age: 76 },
+//     { id: 3, name: "Mercedes", age: 16 },
+//     { id: 4, name: "Dave", age: 76 },
+//   ];
+//   // => forEach
+//   const ageArray_1 = [];
+//   users.forEach((us) => {
+//     ageArray_1.push(us.age * 2);
+//   });
+//   console.log(ageArray_1);
+//   // => map
+//   const ageArray_2 = users.map((us) => us.age * 2);
+//   console.log(ageArray_2);
+// ================================================ 🔥
 
 
 ---------------------------------------------------------------------------------------------------------------
