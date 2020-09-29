@@ -1,5 +1,37 @@
 // STRINGLERİN METODLARI
 
+
+let cumle = "ali'nin yaşı : 3434'dür. soyadı ise : "
+let langs = "java,Pyton,Para,C++"
+let city = ["bursa","izmir", "istanbul","Antakya","rize","Edirne"]
+let word = "    boşluk     "
+let num1 = 123456
+let num2 = [1,2,3,4,5]
+let aa = num1.toString()
+
+
+// console.log(cumle.length); //uzunluğu ölçmek için
+// console.log(cumle.concat("Demir'dir")); //ekleme yapmak için
+// console.log(city[2]); //indexleme yapmak için
+// console.log(langs.charAt(2)); //indexleme yapmak için(array de çalışmaz)
+// console.log(langs.includes("java")); //içinde arama yapmak için kullanılır. Sonuç BOOLEON olur
+// console.log(cumle.toLowerCase()); // Küçük yapma Methodu 
+// console.log(cumle.toUpperCase()); //Büyük  yapma Methodu 
+// console.log(langs.indexOf("Py"));// string içinde bir harfin konumunu aramak için kullanılır.
+// console.log(langs.search(/py/i)); // Bu da string içinde bir harfin konumunu aramak için kullanılır. İndek of methodundan farkı şudur. /..../i bu şekilde yazar iseniz case sensitive özelliğini devre dışı kalır.
+// console.log(langs.split(","));// Arraye çevirir.  Mesela bir dosyada eğer virgüller ile ayrılmış eleman var ise parantez içine virgül koyulur böylece tek tek listeye çevirir.
+// console.log(cumle.split(" ")); //parantez içine normal cümle ise boşluk koyulur  böylece tek tek listeye çevirir. Boşluk koyulmaz ise harf harf listeler.
+// console.log(aa.split("")); // sayıyı da önce string yapıp sonra listeleme yapabilirsiniz
+// console.log(langs.replace("java","html")); // Değiştirme yapmak için kullanılır. Array de çalışmaz
+// console.log(cumle.slice(1,5)); // sadece belirli bir yeri almak için. ilk rakamı alır son rakamı almaz
+// console.log(cumle.substr(1,5)); // sadece belirli bir yeri almak için. ilk rakamı da son rakamı da alır.
+// console.log(cumle.substring(1,5)); // sadece belirli bir yeri almak için. ilk rakamı alır son rakamı almaz
+// console.log(word.trim()); // Etrafındaki boşlukları alır
+
+
+
+
+
 // LENGTH Methodu
 
 // let value;
@@ -73,7 +105,7 @@ console.log(school[1])
 1
 1
 
-// CHAR AT METHODU (indexlemenin farklı bir yolu)
+// CHAR AT METHODU (indexlemenin farklı bir yolu) (!! Arraylerde bu yöntem işlemiyor. Orada indexlemeyi kullanmak lazım)
 
 örnek :
 const firstName = "Murat";
@@ -203,12 +235,7 @@ Almanca
 
 örnek :
 var dizi = ["ali", "veli", "kırklareli", "emret", "komutanım", "diyeceksiniz"];
-document.write("Orjinal dizi : " + dizi + "<br>");
-çıktı :
-Orjinal dizi : ali,veli,kırklareli,emret,komutanım,diyeceksiniz
-
-// 2. indisden başlayarak (2. indis dahil), 5. indise kadar (5 hariç) olan tüm değerleri aldı ve yeni dizi oluşturdu.
-var kopya2 = dizi.slice(2,5);
+var kopya2 = dizi.slice(2,5);// 2. indisden başlayarak (2. indis dahil), 5. indise kadar (5 hariç) olan tüm değerleri aldı ve yeni dizi oluşturdu.
 document.write("2. kopya dizi : " + kopya2 + "<br>");
 çıktı :
 2. kopya dizi : kırklareli,emret,komutanım
@@ -252,6 +279,8 @@ console.log(value)
 Hayat Almanca öğrenemeyecek kadar kısadır
 
 
+--------------------------------------------------------------------------------------------
+
 
 EKSTRA : 
 
@@ -262,123 +291,4 @@ value += " CANCADAN" // value = value + " " + CANCADAN
 
 // boşluk eklemenin kısa yolu
 value = firstName + " " + lastName // araya boşluk eklemek için
-
-
-// splice() metodu diziye eleman ya da elemanlar eklenebilmesini sağladığı gibi, silinebilmesini de sağlar. splice() ile diziden silinen değeri geri döndürür. Metot dizinin yapısını değiştirir.
-
-// Silinen değeri gei döndürür. ekleneni döndürmez. dizinin yapısını değiştirir.
- 
-var dizi = new Array("ali", "veli", "kırklareli", "emret", "komutanım");
-document.write("orjinal dizi : " + dizi + "<br>");
-çıktı :
-orjinal dizi : ali,veli,kırklareli,emret,komutanım
-
-
-
-var sil = dizi.splice(2, 1); // 2. indisten başla 1 tane sil, silinecek adet sayısı belirtilmezse 2. indisten başlar sona kadar siler.
-document.write("silinen değer : " + sil + "<br>");
-document.write("silindikten sonraki dizi : " + dizi + "<br>");
-çıktı :
-silinen değer : kırklareli
-silindikten sonraki dizi : ali,veli,emret,komutanım
-
-
-var ekle = dizi.splice(1,0,"ahmet", "mehmet"); // 1. indisten başla (değeri 1. indisin önüne koyar), değer silme (0 koyarak değer silme diyoruz), sonradan yazılanları diziye 1. indisten itibaren ekle
-document.write("eklenen değer : " + ekle + "<br>"); // eklenen değeri döndürmez dedik!
-document.write("ekledikten sonraki dizi : " + dizi + "<br>");
-çıktı :
-eklenen değer :
-ekledikten sonraki dizi : ali,ahmet,mehmet,veli,kırklareli,emret,komutanım
-
-
-// aynı anda hem silip hem ekleme yapalım
-var oncesilsonraekle = dizi.splice(1,2,"murat"); // 1. indisten sonra (1. indis dahil) 2 değer silip güncel değer i ekledi
-document.write("silinen değerler : " + oncesilsonraekle + "<br>");
-document.write("ekledikten sonraki dizi : " + dizi + "<br>");
-çıktı :
-silinen değerler : ahmet,mehmet
-ekledikten sonraki dizi : ali,murat,veli,kırklareli,emret,komutanım
-
-
-
-
-// unshift() Javascript de dizilerin başına eleman ya da elemanlar eklemek için unshift() metodunu kullanıyoruz. Metot diziye eleman ya da elemanlar eklerken dizinin yapısını değiştirir.
-
-
-var dizi = ["kırklareli", "emret", "komutanım", "diyeceksiniz"];
-document.write("eklenmeden önce dizi : " + dizi + "<br>");
-çıktı :
-eklenmeden önce dizi : kırklareli,emret,komutanım,diyeceksiniz
-
-dizi.unshift("ali", "veli");
-document.write("eklendikten sonra dizi : " + dizi);
-çıktı :
-eklendikten sonra dizi : ali,veli,kırklareli,emret,komutanım,diyeceksiniz
-
-
-
-
-// push() Javascript de dizilerin sonuna push() metodu eleman ya da elemanlar ekleyebiliriz. Metot elemanları eklerken dizinin yapısını değiştirir.
-
-var dizi = ["ali", "veli", "kırklareli", "emret"];
-document.write("eklenmeden önce dizi : " + dizi + "<br>");
-çıktı :
-eklenmeden önce dizi : ali,veli,kırklareli,emret
-
-dizi.push("komutanım", "diyeceksiniz");
-document.write("eklendikten sonra dizi : " + dizi);
-çıktı:
-eklendikten sonra dizi : ali,veli,kırklareli,emret,komutanım,diyeceksiniz
-
-
-
-// shift() metodu dizilerin ilk elemanlarını siler ve döndürür.
-
-var dizi = ["ali", "veli", "kırklareli", "emret", "komutanım"];
-document.write("silinmeden önce dizi : " + dizi + "<br>");
- çıktı :
- silinmeden önce dizi : ali,veli,kırklareli,emret,komutanım
-
-var silinen = dizi.shift();
-document.write("silinen değer : " + silinen + "<br>");
-document.write("silindikten sonra dizi : " + dizi);
-çıktı:
-silinen değer : ali
-silindikten sonra dizi : veli,kırklareli,emret,komutanım
-
-
-
-
-// pop() metodu dizinin son elemanını siler ve dizinin yapısını değiştirir. Aynı zamanda da diziden silinen elemanı döndürür.
-
-var dizi = ["ali", "veli", "kırklareli", "emret", "komutanım"];
-document.write("silinmeden önce dizi : " + dizi + "<br>");
-çıktı :
-silinmeden önce dizi : ali,veli,kırklareli,emret,komutanım
-
-var silinen = dizi.pop();
-document.write("silinen değer : " + silinen + "<br>");
-document.write("silindikten sonra dizi : " + dizi);
-çıktı :
-silinen değer : komutanım
-silindikten sonra dizi : ali,veli,kırklareli,emret
-
-
-// NOT:   javascript ile shift() metodu ile dizinin ilk elemanını, pop metodu ile de dizinin son elemanını indisleri ile beraber siler
-
-
-
-// delete metodu diğerleri gibi dizinin yapısını değiştirmez. Sadece belirttiğiniz indise ait eleman silinir yani belirttiğiniz indis undefined (tanımsız) olur.
-
-var dizi = ["ali", "veli", "kırklareli", "emret", "komutanım"];
-document.write("silinmeden önce dizi : " + dizi + "<br>");
-çıktı :
-silinmeden önce dizi : ali,veli,kırklareli,emret,komutanım
-
-delete dizi[3];
-document.write("silindikten sonra dizi : " + dizi + "<br>");
-çıktı:
-silindikten sonra dizi : ali,veli,kırklareli,,komutanım
-
-
 
