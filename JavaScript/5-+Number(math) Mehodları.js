@@ -1,3 +1,40 @@
+// NUMBER METHODS
+
+// MATH OBJESİ. Bu obje ile Matematik içindeki değerleri çağırabiliriz. örnek :mat = Math.max(10,-2,150,2315,32)
+
+let mat;
+
+mat = Math.PI;
+mat = Math.E;
+mat = Math.round(3.6) // bu değerleri yukarı yuvarlar
+mat = Math.round(3.4) // bu değerleri aşağı yuvarlar
+
+mat = Math.ceil(3.9) // bu değerleri her türlü yukarı yuvarlar
+mat = Math.ceil(3.4) // bu değerleri her türlü yukarı yuvarlar
+
+mat = Math.floor(3.9) // bu değerleri her türlü aşağı yuvarlar
+mat = Math.floor(3.4) // bu değerleri her türlü aşağı yuvarlar
+
+mat = Math.sqrt(16) // bu karekökünü alır
+
+mat = Math.abs(-10) // Mutlak değerini alır
+
+mat = Math.pow(4,3) // Üst almamızı sağlar. 4 üzeri 3 demek gibi.
+
+mat = Math.max(10,-2,150,2315,32) // En yüksek sayıyı verir
+mat = Math.min(10,-2,150,2315,32) // En düşük sayıyı verir
+
+mat = Math.random()// Rastgele sayı üretme metodudur. burada default halinde 0 ile 1 arasında sayı üretir
+mat = Math.random() * 100 // burada 0 ile 100 arasında sayı üretit
+mat = Math.floor(Math.random() * 100) // ürettiğimiz sayıyı int yapmak için. bu aşağı yuvarlar
+mat = Math.ceil(Math.random() * 100) // ürettiğimiz sayıyı int yapmak için. bu yukarı yuvarlar
+
+console.log(mat)
+
+
+----
+
+
 
 // parseInt() Metodu => kendisine ondalıklı olarak verdiğiniz değerin ondalık kısmını siler ve kalan kısımdan yeni bir değişken oluşturarak döndürür. parseInt(), veri türü ne olursa olsun girilen değeri number veri türüne dönüştürecektir
 
@@ -314,37 +351,3 @@ erik
 
 
 
-KISALTMALAR:
-
-
-// MATH OBJESİ. Bu obje ile Matematik içindeki değerleri çağırabiliriz. örnek :mat = Math.max(10,-2,150,2315,32)
-
-let mat;
-
-mat = Math.PI;
-mat = Math.E;
-mat = Math.round(3.6) // bu değerleri yukarı yuvarlar
-mat = Math.round(3.4) // bu değerleri aşağı yuvarlar
-
-mat = Math.ceil(3.9) // bu değerleri her türlü yukarı yuvarlar
-mat = Math.ceil(3.4) // bu değerleri her türlü yukarı yuvarlar
-
-mat = Math.floor(3.9) // bu değerleri her türlü aşağı yuvarlar
-mat = Math.floor(3.4) // bu değerleri her türlü aşağı yuvarlar
-
-mat = Math.sqrt(16) // bu karekökünü alır
-
-mat = Math.abs(-10) // Mutlak değerini alır
-
-mat = Math.pow(4,3) // Üst almamızı sağlar. 4 üzeri 3 demek gibi.
-
-mat = Math.max(10,-2,150,2315,32) // En yüksek sayıyı verir
-mat = Math.min(10,-2,150,2315,32) // En düşük sayıyı verir
-
-mat = Math.random()// Rastgele sayı üretme metodudur. burada default halinde 0 ile 1 arasında sayı üretir
-mat = Math.random() * 100 // burada 0 ile 100 arasında sayı üretit
-mat = Math.floor(Math.random() * 100) // ürettiğimiz sayıyı int yapmak için. bu aşağı yuvarlar
-mat = Math.ceil(Math.random() * 100) // ürettiğimiz sayıyı int yapmak için. bu yukarı yuvarlar
-
-
-console.log(mat)
