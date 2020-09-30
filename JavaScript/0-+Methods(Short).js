@@ -19,7 +19,7 @@ console.log(langs.charAt(2)); //indexleme yapmak için(array de çalışmaz)
 console.log(langs.includes("java")); //içinde arama yapmak için kullanılır. Sonuç BOOLEON olur
 console.log(cumle.toLowerCase()); // Küçük yapma Methodu 
 console.log(cumle.toUpperCase()); //Büyük  yapma Methodu 
-console.log(langs.indexOf("Py"));// string içinde bir harfin konumunu aramak için kullanılır.
+console.log(langs.indexOf("Py"));// string içinde bir harfin konumunu aramak için kullanılır. Bulamaz ise sonuç -1 çıkar
 console.log(langs.search(/py/i)); // Bu da string içinde bir harfin konumunu aramak için kullanılır. İndek of methodundan farkı şudur. /..../i bu şekilde yazar iseniz case sensitive özelliğini devre dışı kalır.
 console.log(langs.split(","));// Arraye çevirir.  Mesela bir dosyada eğer virgüller ile ayrılmış eleman var ise parantez içine virgül koyulur böylece tek tek listeye çevirir.
 console.log(cumle.split(" ")); //parantez içine normal cümle ise boşluk koyulur  böylece tek tek listeye çevirir. Boşluk koyulmaz ise harf harf listeler.
@@ -144,3 +144,46 @@ value =(true).toString(); // typeof (true).toString(); ile kontrol edilir ise so
 value =(123).toString(); // typeof (123).toString(); ile kontrol edilir ise sonuç String çıkar
 
 console.log(value);
+
+
+
+
+// OPERATORS
+
+
+let value;
+const value1 = 10;
+const value2 = 2;
+value = value1 + value2 // output : 12 - Addition
+value = value1 - value2 // output : 8 - Subtraction
+value = value1 * value2 // output : 20 - Multiplication 
+value = value1 ** value2 // output : 100 - Exp  (karesini alır)
+value = value1 / value2 // output : 5 - Divission
+value = value2 / value1 // output : 0.2 - Divission
+value = value1 % value2 // output : 0  - Modulus - Kalanı verir
+
+a -= 5;
+a *= 5;
+a %= 3;
+name += " Ahmet"
+
+==	   // equal to (eşittir)	
+
+===	  //  equal value and equal type	(hem tipi hem de değeri eşittir. )
+
+!=	// not equal	(değeri eşit değildir)
+
+!==	// not equal value or not equal (ya değeri yada tipi eşit değildir)
+
+>	// greater than    (büyüktür)
+
+<	//  less than   (küçüktür)
+
+>=	//  greater than or equal to	(büyüktür ve eşittir)
+
+<=	//  less than or equal to	(küçüktür ve eşittir)
+
+
+&&	and	 //   (x < 10 && y > 1)       is true	
+||	or	 //   (x == 5 || y == 5)      is false	
+!	not	 //   !(x == y)               is true
