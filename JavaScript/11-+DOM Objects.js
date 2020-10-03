@@ -15,20 +15,6 @@
 ------------------------------------------------------------------
 
 
-------------------------------------------------------------------
-
-
-
-------------------------------------------------------------------
-
-
-
-------------------------------------------------------------------
-
-
-
-------------------------------------------------------------------
-
 // ➤ document : Sayfanın kökü.  => document.links, document.height
 
 // ➤ elements :  Ağaçtaki bir düğüm.
@@ -37,66 +23,39 @@
 
 // ➤ atribute : DOM'daki bir düğüm.
 
-Kod	Fonksiyon
-write(“string”)     	verilen dizeyi belgeye yazar
-getElementById ()	    verilen id değerine sahip öğeyi döndürür. Öğe İD e göre bir öğe bulur
-getElementsByName ()	verilen ad değerine sahip tüm öğeleri döndürür
-getElementsByTagName ()	verilen etiket adına sahip tüm öğeleri döndürür
-getElementsByClassName ()	verilen sınıf adına sahip tüm öğeleri döndürür
-innerHTML	:       Bir HTML öğesinin içindeki içeriğe yazmak amacıyla erişmenin bir yolu
-document.forms :    	temel olarak belge nesnesinin "formlar" koleksiyonuna erişim
+
+------------------------------------------------------------------
+
+// SCRİPTLER
+
+value = document.scripts; // dokument içindeki scriptleri getirir
+value = document.scripts.length; // dokument için kaç adet script olduğunu getirir
+value = document.scripts[0]; // dokument içindeki 0. scripti getirir
+ 
+
+// LİNKLER
+
+value = document.links;
+value = document.links.length;
+value = document.links[0];
+value = document.links[0].className;
+value = document.links[0].classList; // birden fazla class var ise getirir
+value = document.links[0].getAttribute("class"); // bu şekildede classı öğrenebiliriz
+value = document.links[0].getAttribute("href"); // bu şekildede hrefini öğrenebiliriz
+value = document.links[dokument.links.length-1]; // sonuncu link
+value = document.links[dokument.links.length-1].className; // sonuncu linkin classı
 
 
-Finding Elements
 
-document.getElementById (id): Öğe kimliğine göre bir öğe bulun
-document.getElementsByTagName (name): Öğeleri etiket adına göre bulun
-document.getElementsByClassName (name): Öğeleri sınıf adına göre bulun
+// FORMS
+value = document.forms;
+value = document.forms.length;
+value = document.forms[0];
+value = document.forms[0].id;
+value = document.forms[0].getAttribute("id"); // bu şekildede id sini öğrenebiliriz
+value = document.forms[dokument.forms.length-1].name;
+value = document.forms[dokument.forms.length-1].getAttribute("name"); 
 
-Finding Elements
 
-element.innerHTML: Bir elemanın iç HTML'sini değiştirin
-element.attribute: Bir HTML öğesinin öznitelik değerini değiştirin
+console.log(value);
 
-Adding and Deleting Elements
-
-document.createElement (element): Bir HTML öğesi oluşturun
-document.removeChild (element): Bir HTML öğesini kaldırın
-document.appendChild (element): Bir HTML öğesi ekleyin
-document.replaceChild (yeni, eski): Bir HTML öğesini değiştirin
-document.write (text): HTML çıktı akışına yazın
-
-örnek : //Bu örnekte <p>, id = "object" ile öğenin içeriğini (innerHTML) değiştirir :
-
-<html>
-  <body>
-     <p id="object"></p>
-     <script>
-      document.getElementById("object").innerHTML = "Hello World!";
-     </script>
-  </body>
-</html>
-Output:
-Hello World!
-
-örnek : // Bu örnek, id = "demo" olan öğeyi bulur ve ardından <p>"demo" içindeki tüm öğeleri bulur :
-
-<html>
-  <body>
-      <h1>Clarusway</h1>
-      <div id="demo">
-          <p>Hello Clarusway</p>
-          <p>Document Object Model (DOM)</p>
-      </div>
-      <p id="DOM"></p>
-    <script>
-      var x = document.getElementById("demo");
-      var y = x.getElementsByTagName("p");
-      document.getElementById("demo").innerHTML = 
-'The first paragraph inside is: ' + y[0].innerHTML;
-    </script>
-  </body>
-</html>
-output :
-Clarusway
-The first paragraph inside is: Hello Clarusway

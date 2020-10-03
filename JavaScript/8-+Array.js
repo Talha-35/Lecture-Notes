@@ -52,12 +52,12 @@ output :
 -1 1
 
 // ➤ birinci parametre ("....") aramak için madde belirler.
-// ➤ ikinci parametre nereden aramaya başlayacağını tespit eder 
+// ➤ ikinci parametre nereden aramaya baaşlyacağını tespit eder 
 
 örnek :
 // örnek :
 const mix = ['FB', "Red" , 'GS', 'BJK', 'TS', "Red", "Blue", "Yellow"]
-value = mix.indexOf("Red");  
+value = mix.indexOf("Red");  // 1 dan başla ilk 2 değeri değiştir
 console.log(value);
 output:
 1 //sonuç 1 çıktı çünkü sayı belirtilmediği için ilk sonucu verdi.
@@ -65,7 +65,7 @@ output:
 örnek :
 // örnek :
 const mix = ['FB', "Red" , 'GS', 'BJK', 'TS', "Red", "Blue", "Yellow"]
-value = mix.indexOf("Red",2);  // aramaya 2 dan başla demektir
+value = mix.indexOf("Red",2);  // 1 dan başla ilk 2 değeri değiştir
 console.log(value);
 // output : 
 output:
