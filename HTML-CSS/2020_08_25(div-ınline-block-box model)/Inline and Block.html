@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 10%;
+        }
+        #star{
+            display:inline-block ;
+            border: 3px solid red;
+            width: 500px;
+            height: 100px;
+            /* display: table-cell;
+            vertical-align: middle;
+             */
+             /* bu şekilde yaparak yazıyı ortaya alabiliriz */
+        }
+        
+    </style>
+</head>
+<body>
+    <span style="font-size: 20pt; background-color: chartreuse;">BLOK ELEMENLER VE ETİKETLER</span>
+    <br><br>
+    <p>
+        Altta yorum satırı içinde yazanlar Block Elementleridir
+        <!-- <address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video></video> -->
+    </p>
+    
+    <div style="border: 1px solid red;">DİV</div>
+    <H1 style="border: 1px solid red;">H1</H1>
+    <form style="border: 1px solid red;">form</form>
+    <p style="border: 1px solid red;">p</p>
+    <ul style="border: 1px solid blue;">
+        <li style="border: 1px solid red;">li</li>
+        <li style="border: 1px solid red;">li</li>
+    </ul>
+    <ol style="border: 1px solid blue;">
+        <li style="border: 1px solid red;">li</li>
+        <li style="border: 1px solid red;">li</li>
+    </ol>
+    <table style="border: 1px solid red;">
+        <tr>
+            <th style="border: 1px solid red;">TH</th>
+            <!-- Table da blok elementidir. bütün satırı kapar ama çerçeve olarak öyle gözükmüyor. mesela birşeyler yazmak  isterseniz alt satıra geçer yana yazmaz. -->
+        </tr>
+        <tr style="border: 1px solid blue;">
+            <td style="border: 1px solid blue;">TD</td>
+        </tr>
+    </table>
+    <br><br><br>
+
+    <SPan style="font-size: 20pt; background-color: chartreuse;" >INLINE ELEMENTLER</SPan>
+    <br><br>
+    <p>
+        Altta yorum satırı içinde yazanlar Block Elementleridir
+        <!-- <a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var> -->
+    </p>
+    <span>inline elementlere width ve height değerleri yükleyemezsiniz. margin ve padding değerleri uygulayabilirsiniz</span>
+
+    <br><br><br>
+    <b>Naber</b>
+    <b>Nasılsın</b>
+    <i>Naber</i>
+    <ins>Naber</ins>
+    <span>selam</span>
+    <del>Naber</del>
+    <em>Naber</em>
+    <strong>Naber</strong>
+    <a href="goggle">google</a>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSJCXzSzwUJU26MeZI7tbC6wyhutR8QGU2HgA&usqp=CAU" width="75px">
+    <input type="text" name="" id="">
+    <br><br><br>
+    <SPan style="font-size: 20pt; background-color: chartreuse;" >DISPLAY KONUSU</SPan>
+    <br>
+    <br>
+    <br>
+    <b style="border: 1px solid red;">bu  bir inline elementtir</b>
+    <h1 style="display: inline; border: 1px solid red;">bu normalde bir block elementtir ama display ile inline yaptık </h1>
+    <b style="display: block; border: 1px solid red; background-color: darksalmon;">bu normalde bir inline elementtir ama display ile block yaptık</b>
+    <b style="border: 1px solid red;">bu  bir inline elementtir</b>
+    <br><br>
+    <SPan style="font-size: 20pt; background-color: chartreuse;" >INLINE-BLOCK KONUSU</SPan>
+    <br><br>
+    <span>inline elementlere width ve height değerleri yükleyemezsiniz. margin ve padding değerleri uygulayabilirsiniz aMA INLINE/BLOCK yaptığınız zaman tamamen block olup bütün satırı kaplamıyor ama block özelliğindeki gibi width ve height verebiliyoruz</span>
+    <br><br>
+    <b id="star">bu ınline/block bir metin yapıldı. bu sebeple width height eklenebildi.</b>
+    <b>bu bir inline elementtir</b>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div and Span</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      #box1 {
+        color: tomato;
+      }
+      #box2 {
+        color: navy;
+        background-color: turquoise;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      div{
+            width: 80%;
+            /* bu şekilde yapılınca ekranın yani Div alanının % 80 ni kullanılıyıor */
+            text-align: center;
+            border: 3px solid red;
+        }
+        img{
+            width: 50%;
+            /* resimler DİV içinde olduğu için bu şekilde ise div alanının tamamı değil %50 si kullanılıyor. */
+        }
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+      <h1>Div ve Span çalışması</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
+        eum sint nisi excepturi. Corrupti blanditiis suscipit corporis,
+        voluptatem dolores eos temporibus architecto, doloribus eaque sapiente
+        amet omnis! Recusandae, eveniet aperiam.
+      </p>
+    </div>
+    <div id="box2">
+      <h1>Div ve Span çalışması</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
+        eum sint nisi excepturi.
+        <span style="color: red">
+          Corrupti blanditiis suscipit corporis, voluptatem dolores eos
+          temporibus architecto, doloribus eaque sapiente amet omnis!
+          Recusandae, eveniet aperiam.</span
+        >
+      </p>
+    </div>
+
+    <h1>Tanııtıcı Uygulama</h1>
+
+    <div>
+        <h2>Robot Resim çiziyor</h2>
+        <img src="./images/Aşk.jpg" alt="" title="kalp">
+    </div>
+    <br>
+    <div>
+        <h2>El ile Kalp çizimi</h2>
+        <img src="./images/elle kalp.jpg" alt="" title="kalp gğn batımı">
+    </div>    
+
+  </body>
+</html>

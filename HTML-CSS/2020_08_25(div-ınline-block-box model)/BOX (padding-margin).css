@@ -1,0 +1,58 @@
+/* eğer kullanıcı BOX-SIZING yapmaz iseniz o zaman uyguladığımız padding alanı genişletir. Border da böyledir.
+Mesela %50 lik bir alan var.ve siz de %48 lik bir block element koydunuz sonra da buna her taraftan %5 padding uyguladınız o zaman taşma yapar . Ama burada BOX-XIZING uygular iseniz dış alanı sabit yapabilirsiniz */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18pt;
+    /* box-sizing: border-box; bu özellik genelde buraya eklenir */
+}
+
+
+body{
+    margin-left: auto;
+    margin-right:auto;
+    /* bu şekilde her ikisini de auto yapar isek ortalamış oluruz */
+    /* margin: 0 auto; bu şekilde der isek bu da üst ve alt'tan sıfır yap kenarlardan ortala demektir. */
+    width: 500px;
+    height: 500px;
+    border: 10px solid rgb(245, 13, 13);
+    background-color: cyan;
+    margi
+}
+
+span{
+    background-color: rgb(136, 255, 0);
+    font-size: 30pt;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#h{
+    margin: 30px;
+    text-align: center;
+    font-size: 20pt;
+    color: darkmagenta;
+    text-decoration:underline ;
+}
+#div1 {
+    border: 5px solid blue;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(118, 250, 114);
+}
+
+#div2 {
+    width: 500px;
+    height: 200px;
+    border: 5px solid rgb(247, 25, 191);
+    padding: 30px;
+    background-color: salmon;
+    box-sizing: border-box;     /* burada BOX_SIZING uyguladığımız için herhangi bir kayma olmuyor alan sabit. Yani biz width 500px dedik ama sonradan 30px soldan 30px de sağdan padding yaptık bizim width oldu 560. 10px de border eklendi bu sefer 570px oldu. bunun önüne geçmek için box-sizing kullanılır. o zaman içerdeki alandan alır padding ve border değerlerini.*/
+}
+
+p {
+    border: 5px solid yellow;
+    background-color: skyblue;
+    padding: 0px;
+}
