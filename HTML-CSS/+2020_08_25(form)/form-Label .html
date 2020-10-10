@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <form action="result.html" method="GET" name="netflix-survey" id="survey-form" target="_blank">
+            <!-- form yaparken method kısmı mutlaka doldurulmalıdır. GET seçilir ise kısa ve önemsiz bilgiler kullanılmalıdır. POST seçilir ise uzun ve şifre gibi önemli bilgiler seçilmelidir. -->
+            <!-- Form yapıldığında action kısmını da verilerin nereye gitmesini istiyor isek oraya bağlantı sağlanalıdır. örn: bir internet adresi veya Result.html gibi -->
+            
+            <div>
+                <br>
+                <label>Name<br><br><input type="text" name="name" required placeholder="enter your name" id="name"
+                        class="location" ></label><br><br />
+                <!-- Bu şekilde Label ile input aynı satıra yazılır ise For ve id arasında eşleşme yapılmasına gerek yok -->
+            </div>
+
+            <div>
+                <label for="pass-label">Password <br><br> </label>
+                <!-- buraya label yazmayıp direk Password de yazabilirdik. Ama o zaman kullnıcı Password yazısına tıklayınca input kısmında yani çerçeve de odaklanma olmazdı. ama label içinde yazar iseniz o zaman çerçeve de renklenme oluyor. -->            
+                <input type="password" id="pass-label" name="sifre" placeholder="Password Giriniz" ><br><br>
+                <!-- Bu şekilde Label ile input farklı satıra yazılır ise For ve id arasında eşleşme yapılmak zorundadır -->
+                <!-- burada type password yazmanın avantajı şudur: password içine bir kelime yazdığınız zaaman yazı veya rakam gözükmez -->
+            </div>
+
+            <div>
+                <label for="date">Date</label><br /><br>
+                <input type="date" name="date" placeholder="date giriniz" id="date" class="location" /><br><br>
+                <!-- Burada da Label deki FOR ile İnput ID si aynı olmalıdır. Çünkü ikisi farklı satırlarda eşleşmeleri gerekiyor. -->
+            </div> 
+
+            <div>
+                <label for="Age">Age</label><br /><br>
+                <input type="Number" name="age" placeholder="age" id="Age" class="location" /><br><br>
+                <!-- Burada da Label deki FOR ile İnput ID si aynı olmalıdır. Çünkü ikisi farklı satırlarda eşleşmeleri gerekiyor. -->
+            </div>
+
+            <div>
+                <label for="Email">Email<br><br><input type="email" name="email" placeholder="enter your Email"
+                        id="Email" class="location" /></label><br /><br>
+                <!-- burada type email yazmanın avantajı şudur: email içine bir kelime yazıp @ kullanmaz isek uyarı veriri. email formunda yaz diye uyarı veriri bize -->
+            </div>
+
+            <div>
+                <label for="Contenttype" id="Contenttype">Content type</label><br><br>
+                <select name="Content" id="Contenttype">
+                    <option value="movies">Movies</option>
+                    <option value="series" selected>Series</option>
+                    <!-- burada value değeri aynı girilmelidir. Value bilgisyarın gördüğü değerdir. araya yazılan metin ise kullanıcıların gördüğü değerdir. Yoksa değer farklı gider -->
+                    <!-- •	Select elementinde default değeri yapmak için selected yapmak lazım -->
+                </select>
+
+                <br><br>
+
+                <select name="lessons" id="cars" multiple size="2">
+                    <!-- burdaki multiple size ekranda iki tane seçenek gözükür -->
+                    <option value="porsche">porsche</option>
+                    <option value="bmw">bmw</option>
+                    <option value="ferrari" selected>ferrari</option>
+                    <!-- •	select elementinde default değeri yapmak için selected yapmak lazım -->
+                    <option value="renault">renault</option>
+                    <option value="tesla">tesla</option>
+                    <option value="rolceroyce">rolceroyce</option>
+                  </select>
+            </div>
+
+            <div>
+                <br /><label for="Movie">Movie type</label><br />
+                <label for="com"><input type="checkbox" name="film1" value="Comedy" id="com" />Comedy</label><br />
+                <label for="act"><input type="checkbox" name="film2" value="Action" id="act" />Action</label><br />
+                <label for="rom"><input type="checkbox" name="film3" value="Romance" id="rom" checked />Romance</label>
+                <!-- checkbox elementinde default değeri yapmak için checked yapmak lazım -->
+
+            </div>
+
+            <br />
+
+            <div>
+                <br /><label for="Movie">Which Music</label><br />
+                <label><input type="radio" name="music" id="music">Rock</label>
+                <br>
+                <label><input type="radio" name="music" id="music">Pop</label>
+            </div><br>
+            </div><br>
+            <div><label for="Gender">Gender</label><br>
+                <label for="mal"><input type="radio" name="gender" value="Male" id="mal" />Male</label><br />
+                <label for="fem"><input type="radio" name="gender" value="Female" id="fem" />Female</label><br />
+                <label for="oth"><input type="radio" name="gender" value="Other" id="oth" checked />Other</label><br /><br>
+                  <!-- Radio elementinde de default değeri yapmak için checked yapmak lazım -->
+                <!-- burada seçenekler arasındaki name aynı olmak zorunda aksi takdirde Radio butonun özelliği olan çoktan tek seçme olmaz. -->
+                <!-- burada value denen şey arka planda gönderilen değer. yani siz Value:erkekerkek yazar ama arayüzde erkek yazar iseniz. kullanıcı erkek diye işaretler ama arka planda erkekerkek gider -->
+
+            </div>
+
+
+            <div>
+                <label for="Feedback">Feed back</label><br><br>
+                <textarea name="Feedback" id="Feedback" cols="48" rows="5"
+                    placeholder="any comment"></textarea><br /><br />
+            </div>
+
+
+            <div id="submit-center">
+                <input type="submit" value="Gönder" id="submit" />
+                <!-- yukardaki Value değeri kutu içerisindeki değer ile aynıdır. ekranda ne çıkmasını istiyor iseniz onu yazın -->
+                <br><br>
+                <!-- submiti button etiketi ile de yapabiliriz içine type vermemeiz gerekiyor -->
+                <button type="submit">Gönder</button>
+            </div>
+
+            <br>
+
+            <div id="reset-center">
+                <input type="reset" value="reset" id="reset" />
+                <!-- yukardaki Value değeri kutu içerisindeki değer ile aynıdır. ekranda ne çıkmasını istiyor iseniz onu yazın -->         
+                <br><br>
+                <!-- reseti button etiketi ile de yapabiliriz içine type vermemeiz gerekiyor -->
+                <button type="reset">Reset</button>       
+            </div>
+
+
+            <br /><br />
+        </form>
+    </div>
+</body>
+
+</html>
