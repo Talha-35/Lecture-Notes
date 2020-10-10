@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css" />
+
+    <style>
+      body {
+        background-image: url(https://img.paratic.com/dosya/2015/03/yildiz-isimlerin-sahip-oldugu-araclar.jpg);
+        font-style: italic;
+        background-size: 100%;
+        color: black;
+        font-weight: bolder;
+        font-size: 18pt;
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-image: ;
+      }
+      
+      #submit {
+        width: 100px;
+        height: 50px;
+        color: blanchedalmond;
+        background-color: black;
+        font-size: 14pt;
+      }
+      h1 {
+        margin: auto;
+        padding: 1px 20px 5px 10px;
+        border: 2px solid rgb(238, 3, 3);
+        background-color: yellow;
+        width: 80%;
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <h1>27 08 2020 Ders çalışması</h1>
+    <form action="result.html" method="GET" name="myform">
+      <br /><br /><br />
+      <div>
+        <label for="cars" size><b>Choose a car</b></label>
+        <br /><br />
+        <select name="lessons" id="cars" multiple size="2">
+          <!-- burdaki multiple size ekranda iki tane seçenek gözükür -->
+          <option value="porsche">porsche</option>
+          <option value="bmw">bmw</option>
+          <option value="ferrari" selected>ferrari</option>
+          <option value="renault">renault</option>
+          <option value="tesla">tesla</option>
+          <option value="rolceroyce">rolceroyce</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <label for="cars" size><b>Enter your Message</b></label
+        ><br /><br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          maxlength="5"
+          placeholder="enter your message"
+        ></textarea>
+      </div>
+      <div>
+        <label for="browsers">Browsera</label><br />
+        <input type="text" list="browsers" name="options" />
+        <datalist id="browsers">
+          <option value="java"></option>
+          <option value="crome"></option>
+          <option value="mozilla"></option>
+        </datalist>
+      </div>
+      <br /><br />
+      <div>
+        <fieldset id="asam">
+          <legend>Personal İnfo</legend>
+          <label for="fname">First Name</label>
+          <br />
+          <input type="text" name="fname" id="fname" value="Talha" />
+          <br />
+          <label for="lname">Last Name</label>
+          <br />
+          <input type="text" name="lname" id="lname" value="Ülkümen" />
+        </fieldset>
+      </div>
+      <br /><br />
+      <input type="submit" value="Send" id="submit" />
+      <br /><br />
+    </form>
+  </body>
+</html>
