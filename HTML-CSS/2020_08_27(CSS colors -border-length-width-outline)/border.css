@@ -1,0 +1,95 @@
+body{
+    font-size: 18pt;
+}
+
+#part0{
+    border: 10px solid rgb(147, 218, 66);
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    /* bütün değerler birbirine eşit olur ise o zaman değeri yuvarlak yapar. */
+}
+
+
+#part1{
+    border: 15px solid red;
+    outline-color: 1px solid rgb(11, 14, 8); /* Outline  öğenin sınırlarının dışında kalan bir çizgidir. Anahatlar border dan farklıdır. */
+    border-right: none;
+    width: 78%;
+    height: 55px;
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle; /* Hücre içindeki konumunu ayrlıyor. Yazı da bunu kullanabilmek içn DISPLAY i table-cell yapmak lazım
+    bu yazılarda çok kullanılmıyor. daha çok table ve resimlerde kulanılıyor*/  
+    
+    
+}
+#part2{
+    border: 20px hidden rgb(147, 218, 66);
+    width: 33%;
+}
+#part3{
+    border: 20px none red;
+    width: 33%;
+}
+#part4{
+    border: 20px dotted rgb(70, 8, 241);
+    width: 45%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+#part5{
+    border: 20px dashed rgb(255, 0, 128);
+    width: 33%;
+    border-top: none;
+    border-bottom-color: rgb(3, 1, 1);
+}
+#part6{
+    border: 20px double rgb(229, 233, 24);
+    width: 33%;
+}
+#part7{
+    border: 20px groove rgb(43, 255, 0);
+    width: 33%;
+    border-left-style: dotted;
+    border-right-style: dashed;
+}
+#part8{
+    border-top: 5px ridge red;
+    border-left: 5px ridge yellow;
+    border-bottom: 5px ridge black;
+    border-right: 5px ridge blue;
+    width: 33%;
+    color: blue;
+    background-color: rgb(221, 204, 162);
+}
+#part9{
+    border: 20px inset rgb(3, 1, 1);
+    width: 33%;
+}
+#part10{
+    border: 20px outset red;
+    width: 33%;
+}
+
+/* normalde INLINE etiketlerde width ve height çalışmaz. Bunu çalıştırmanın yolu onu DISPLAY özelliği ile block element haline  getirmektir. Örnek aşağıdadır.
+Mesela a etiketi inline bir etikettir ama biz onu önce block yapacapız sonra da width ve height ekleyeceğiz */
+
+a{
+    border: 5px inset rgb(3, 1, 1);
+    width: 300px;
+    height: 100px;
+    display: block;
+}
+
+b{
+    border: 5px inset rgb(3, 1, 1);
+    width: 300px;
+    height: 100px;   
+}
+/* mesela bu ikisi block element olmadığı için yan yana duruyor ve width ile height çalışmadı */
+span{
+    border: 5px inset rgb(3, 1, 1);
+    width: 300px;
+    height: 100px;
+}
