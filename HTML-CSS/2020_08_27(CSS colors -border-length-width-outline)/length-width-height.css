@@ -1,0 +1,51 @@
+/* html{
+    width: 50px;
+    height: 50px;
+} */
+
+body {
+    background-color: #f8f8f8;
+}
+#main-content {
+    background-color: #e7c1c1;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 2%;
+}
+.auto-width {
+    width: auto;
+    height: auto;
+    background-color: aqua;
+}
+.length-width {
+    width: 50px;
+    height: 50px;
+    background-color: bisque;
+}
+.percentage-width {
+    width: 80%;
+    height: 10%;
+    background-color: blueviolet;
+}
+.initial-width { /* burada kök hücreden değer al demek isteniyor. yan, default veya HTML elementi altında tanımlanan değer ne ise odur.*/
+    width: initial;
+    height: initial;
+    background-color: rgb(3, 248, 3);
+}
+.inherit-width {/* burada parent hücreden değer al demek isteniyor. yani burada main content in değerlerini alır. */
+    width: inherit;
+    height: inherit;
+    background-color: lightseagreen;
+}
+.max-width {
+    max-width: 350px;
+    min-width: 100px;
+    background-color: magenta;
+}
+.max-height {
+    max-height: 150px;/* burada maximum yükseklik 150px çıkar sonrasında büyümeyi durdurur. */
+    max-width: 200px;/* burada maximum genişlik 200px çıkar sonrasında büyümeyi durdurur */
+    background-color: mediumslateblue;
+    overflow: auto; /* bu özelliği kullanmaz isek taşma yapar */
+}
