@@ -1,0 +1,36 @@
+
+#kutu1{
+    color:tomato
+}
+#kutu2{
+    color: rgb(102, 255, 0);
+}
+#kutu3{
+    color: hsl(240, 100%, 50%);
+}
+#kutu4{
+    color: #ff00dd;
+}
+#kutu5{
+    color: rgba(38, 0, 255, 0.5);
+}
+#kutu6{
+    color: rgb(14, 109, 50);
+}
+#par1{
+    font-size: 15pt;
+    color:rgb(238, 3, 3);
+    background-color: yellow;
+}
+
+#par2{
+    font-size: 15pt;
+    color:rgb(17, 0, 255);
+    background-color: rgb(216, 174, 214);
+}
+
+#par3{
+    font-size: 15pt;
+    color:black;
+    background: rgb(40, 158, 16);
+}
