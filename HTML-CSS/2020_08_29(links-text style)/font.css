@@ -1,0 +1,98 @@
+/* 
+
+İki tür yazı tipi ailesi adı vardır:
+Generic Family: Benzer görünüme sahip yazı tipi ailesi grubu.
+Font Family: Belirli bir yazı tipi ailesi (ör. "Times New Roman" veya "Arial") Bir metnin yazı tipi ailesi, yazı tipi ailesi özelliği ile ayarlanır. Virgülle ayrılmış bir listede birden fazla yazı tipi ailesi belirtilmiştir.
+
+font-style
+Yazı tipi stili italik veya eğik ayarlamak için kullanılır.
+Bu özelliğin üç değeri vardır:
+normal: Metin normal olarak gösterilir
+italic: Metin italik olarak gösterilmiştir
+oblique - Metin "eğimli" (italikle benzer, ancak daha az destekleniyor)
+
+*/
+
+/* Default Font değeri 16px dir */
+
+body{
+    text-align:unset;  
+}
+
+#fonts1{
+    color:saddlebrown;
+    background-color: khaki;
+    border: 3px solid red;
+    font-family: 'Courier New', Courier, monospace;    
+    /* Yazının hangi aileden vene şekilde olacağını belirtir. burdakiüç tip de aynı aileden olduğu için mesela  hafıza da Courier New' yok ise Courier olarak yoluna devam eder o da yok ise monospace olarak devam eder. */
+    font-size: 2em ;     
+    /* Metnin boyutunu ayarlar. Yazı tipi boyutunu px, em, rem, vw veya% olarak ayarlayabilirsiniz. Tarayıcılarda varsayılan metin boyutu 16 pikseldir. Yani, 1em / 1rem'in varsayılan boyutu 16 pikseldir. vw"Görüntü alanı genişliği" anlamına gelen birim ile , metin boyutu pencerenin boyutuna göre değişecektir. 1vw, görüntü alanı genişliğinin% 1'ine eşittir. */
+    font-style: normal;     
+    /* Yazı tipi stili italik veya eğik ayarlamak için kullanılır. 
+    normal: Metin normal olarak gösterilir    
+    italic: Metin italik olarak gösterilmiştir    
+    oblique - Metin "eğimli" (italikle benzer, ancak daha az destekleniyor) 
+    UNSET yazıya stil vermiyorum demek. default gibi yani.  
+    INITIAL başlangıç değeridir. default. 
+    INHERIT bir üstteki Parent in değerini al demek. 
+    */
+    font-weight:bold ;     /* yazının kalın ince vs olacağını belirtir */
+    font-variant:small-caps ;    
+    /* Yazı çeşitliği demektir. Bir metin, küçük kaplar içinde görüntülenecek tanımlar yazı tipi. Tüm küçük harfler büyük harflere dönüştürülür, ancak daha küçük yazı tipi boyutundadır. */
+    height: 70px;
+    line-height: 30px ; /* satırlar arasındaki yüksekliği belirtir */
+
+    
+}
+
+#fonts2{
+    background-color: rgb(214, 207, 212);
+    border: 3px solid red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    height: 70px;
+    font-size:2vh  ;
+}
+
+#fonts3{
+    background-color: rgb(1, 10, 2);
+    border: 3px solid red;
+    color: rgba(75, 236, 102, 0.8);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    height: 70px;
+    font-size: 1rem ;
+}
+
+#fonts4{
+    background-color: rgb(122, 107, 107);
+    border: 3px solid red;
+    color: hsla(270, 67%, 1%, 0.7);
+    height: 70px;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+}
+
+#fonts5{
+    background-color: rgb(14, 7, 8);
+    border: 3px solid red;
+    color: white;
+    height: 70px;
+    font-variant: small-caps;
+    font-size: 1em;
+    
+}
+
+#divv{
+    background-color: rgb(184, 91, 105);
+    border: 3px solid red;
+    color: white;
+    font-size: 30pt;
+}
+
+p{
+    font-size: 1em;
+}
+
+/* Css içinde Body ile font-size eğer kullanıcı 20 pt yapar ise H etiketi var ise şayet o da o oranda büyür. çünkü o başlık olduğu için otomatikmen daha büyük olmalıdır. */
+/* Css içinde HTML etiketi altında eğer font-size belirler iseniz kök olarak o default değer olur. eğer alttaki yazılarda siz font-size : 1rem der iseniz direk kök deki büyüklüğü alır.
+html>body>div>p olduğunu varsayalım siz html 50 px dedi iseniz p ye 1 rem der iseniz o zaman p 50 px olur.
+1em ise bir üstteki ata nın ölçüsünü alır. mesela Div içinde paragraf var. siz p içinde 1em der iseniz  div içinde font 20pt ise paragraf da 20 pt olur. */

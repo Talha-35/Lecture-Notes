@@ -1,0 +1,88 @@
+body{
+    text-align: center; /* Tesisinde metnin yatay hizalama ayarlamak için kullanılır. Bir metin sola veya sağa hizalanabilir, ortalanabilir veya yaslanabilir. */
+}
+
+#texts1{
+    color:saddlebrown;
+    /* Mülkiyet metnin rengini değiştirmek için kullanılır. Renk, aşağıdakilerden biri ile tanımlanır: 
+    renk adı: blue HEX değeri: #0000FF 
+    RGB değeri:rgb(0,0,255)
+    RGBA değeri:rgb(0,0,255, 0.5) sondaki değer saydamlık değeridir. 0-1 arasında bir değer vardır. */
+
+    background-color: khaki;     /* arka plan rengini değiştirmek için kullanılır. */
+    border: 3px solid red; /* çerçeve vermek için kullanılır. (solid, dotted, dashed , double,, groove, ridge, inset, outset)*/
+    text-decoration: overline underline wavy;    /* Metinin üst alt ve üstünüçizmek için kullanlır (none, overline, underline, line-through ) 
+    solid dotted vs de kullanılabilir*/
+    text-transform:capitalize ;  /* büyük harf veya küçük harf metne dönüştürmek ya da her kelimenin ilk harfini büyük için kullanılır. uppercase, lowercase, capitalize(cümledeki bütün kelimelerin sadece baş harfleri büyük yapar) */
+    text-indent: 2em; /* Satır girintisi-boşluk demektir
+     1em = 16px ayrıca Bir metnin ilk satırının seti girinti için kullanılır */
+    line-height: 65px; /* satırlar arasındaki boşluğu belirtmek için kullanılır: */
+    letter-spacing: 5px; /* Bir metinde karakterler arasındaki boşluğu ayarlamak için kullanılır. (- değerde verilebilir)*/
+    word-spacing: 2px; /* Bir metinde sözcükler arasında boşluğu belirtmek için kullanılır. (- değerde verilebilir) */
+    direction:rtl ; /* Bir elemanın metin yönünü değiştirmek için kullanılır: (rtl veya ltr) */
+    text-shadow: 11px 5px 1px  blue; /* gölgelendirme yapıyor 1. horizontal (yatay-sağa hizalama) 2. vertical (dikey - aşağı hizalama) 3. blur effect (bulanıklılık seviyesi ) */
+    white-space: ; /* beyaz boşlukları görmenizi sağlıyor mesela sen satır içinde bir tab boşluk bıraktın CSS bunu tanımaz. ama white-space özeeliğini (PRE) yapar isen tanır 
+    nowrap : default
+    pre : nasıl yapar isen öyle olur
+    pre-line : satırları korur ama arada gereksiz boşlukları siler
+    pre-wrap: satırları da boşlukları da korur. PRE ile aynı gibi */
+    
+}
+
+#texts2{
+    background-color: rgb(214, 207, 212);
+    border: 3px solid red;
+    color:violet;
+    text-align:right ;
+    text-decoration:overline underline solid brown; 
+    text-decoration-color: brown; /* yukardaki gibi de yazabilirisniz */
+    text-transform:uppercase ; /* büyük yapar */
+    letter-spacing: 5px; 
+    text-shadow: 10px 10px 0.5px rgb(2, 2, 17);
+    height: 150px;
+    width: 800px;
+    display: table-cell;
+    vertical-align:middle;
+    /* Hücre içindeki konumunu ayrlıyor. Yazı da bunu kullanabilmek içn DISPLAY i table-cell yapmak lazım
+    bu yazılarda çok kullanılmıyor. daha çok table ve resimlerde kulanılıyor*/     
+}
+
+#texts3{
+    background-color: rgb(1, 10, 2);
+    border: 3px solid red;
+    color: rgba(75, 236, 102, 0.8);
+    text-align: justify;
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-transform:lowercase ;/* küçük yapar */
+}
+
+#texts4{
+    background-color: rgb(122, 107, 107);
+    border: 3px solid red;
+    color: hsla(270, 67%, 1%, 0.7);
+    text-align: center;
+    text-transform:none ;
+    text-decoration: overline  underline dotted ;
+    white-space:pre;
+    
+    
+}
+
+#texts5{
+    background-color: rgb(14, 7, 8);
+    border: 3px solid red;
+    color: rgb(236, 217, 217);
+    word-spacing: 15px;    
+    height: 100px; 
+    text-shadow: 10px 15px 2px yellow; 
+}
+
+#texts6{
+    background-color: rgb(171, 154, 230);
+    border: 3px solid rgb(2, 1, 1);
+    color: rgb(12, 5, 5);
+    word-spacing: 25px;     
+    letter-spacing: 5px; 
+    direction: rtl ;
+}

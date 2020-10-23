@@ -1,0 +1,39 @@
+/* Bağlantılara stil vermek için herhangi bir CSS özelliği (renk, yazı tipi boyutu, vb.) Kullanılabilir. */
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: color 3sn linear;
+
+}
+a:link{/* Normal durum, ziyaret edilmemiş bağlantı */
+    color: red;
+    text-decoration: none; /* Genellikle bağlantılardan alt çizgi kaldırmak için kullanılır: */
+    background-color: rgba(224, 162, 162, 0.2 );
+    padding: 2px;
+   
+
+} 
+
+
+a:visited{/* Daha önce ziyaret edilen bağlantı */
+    color: rgb(38,100,38);
+    text-decoration: underline;
+}
+
+a:hover{/* Fare üzerinde durum */
+    background-color: rgb(240, 255, 105);
+    padding: 2px 15px;
+    border-radius: 15px;
+    font-size: 25pt;
+}
+
+a:active{/* Tıklanan bağlantı */
+    color: blue;
+}
+
+/* Bağlantı durumlarını bildirirken bu sıra önerilir.
+1-link
+2-visited
+3-hover
+4-active */
