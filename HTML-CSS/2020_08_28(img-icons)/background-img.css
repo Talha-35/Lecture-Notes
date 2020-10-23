@@ -1,0 +1,39 @@
+
+.div1{
+    background-color: rgba(193, 165, 221,0.2) ;
+    height: 130vh;
+    background-image: url("https://picsum.photos/id/1068/600/400");
+    color: white;
+    background-repeat: no-repeat ; /* resmin tekrar etmesini engelliyor */
+    background-attachment: fixed;   /* resmin sabit kalmasını sağlıyor */
+    /* background-position: top; resmin nerede konumlanacağını gösteriyor */
+    background-size: cover ;
+}
+/* background-image: url("https://picsum.photos/id/598/600/400"), url("https://picsum.photos/id/1020/600/400");
+bu şekilde araya virgül atarak iki resim eklenebiliyor */
+
+.div2{
+    background-color: rgba(193, 165, 221,0.2) ;
+    height: 1000px;
+    background-image: url("https://picsum.photos/id/431/600/400");
+    color: white;
+    background-repeat: no-repeat ; /* resmin tekrar etmesini engelliyor */
+    background-attachment: fixed;   /* resmin sabit kalmasını sağlıyor */
+    background-position: right top;
+    background-size:cover ;
+}
+
+pre {
+    position: relative;
+    top: 50%;
+    left: 40%;
+    font-size: 35px;
+    background-color: black;
+    display: inline;
+    padding: 20px;
+}
+ p{
+     margin: 40px;
+     line-height: 30px;
+     text-align: center;
+ }
