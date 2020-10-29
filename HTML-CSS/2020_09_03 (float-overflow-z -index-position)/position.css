@@ -1,0 +1,91 @@
+.box {
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgb(231, 135, 80);
+  
+}
+
+body {
+  border: 5px solid rgb(21, 255, 0);
+  font-size: 15pt;
+  font-weight: bold;
+  text-align: center;
+  background-size: cover;
+}
+
+#kutu1 {
+  background-color: rosybrown;
+  position: static;
+  /*default değeri STATİC dir.Default yani STATİC durumunda sağa sola üst alt kayma olmaz. bunun için RELATİV kullanabilir */
+  /* herhangi bir özel şekilde konumlandırılmamış; her zaman sayfanın normal akışına göre konumlandırılır. mesela block elementleri alt alta INLINE elementleri yan yana konumlanır. */
+  left: 100px;
+}
+
+#kutu2 {
+  background-color: rgb(125, 167, 70);
+  position: fixed; /* sayfa kaydırılsa bile her zaman aynı yerde kalır. Pozisyonu sabittir yani. Üst, sağ, alt ve sol özellikler, öğeyi konumlandırmak için kullanılır. */
+  top: 0px;
+  left: auto;
+  right: auto;
+  width: 600px;
+  height: 60px;
+  text-align: left;
+}
+
+#kutu3 {
+  /*  kullanıcının kaydırma konumuna göre konumlandırılır. Fixed özeelliğine benziyor ama STİCKY de menu kayar ve giriğiniz konuma geldiği anda durur. orada sabit kalır.*/
+  background-color: rgb(255, 0, 0);
+  position: -webkit-sticky; /* Safari için */
+  position: sticky;
+  width: 250px;
+  height: 50px;
+  top: 0px;
+  left: 290px;
+}
+
+#kutu4 {
+  background-color: rgb(181, 161, 235);
+  position: relative; /*Kelime manası olarak göreceli demektir. Kişi istediği yere gönderebilir. Kişi kendisi ayarlar. Default yani STATİC durumunda sağa sola kayma olmaz. bunun için RELATİV kullanabiliriz */
+  top: 10px;
+  left: 300px;
+  width: 150px;
+  height: 100px;
+}
+#kutu5 {
+  background-color: rgb(228, 13, 13);
+  position: absolute;
+  /* RELATİV ile aynıdır Tek farkı ABSOLUT der iseniz akıştan çıkar tamamen. Mesela kutunun yerini değiştirdiğin anda KUTU 6 onun yerine geçti */
+  top: 400px;
+  right: 0px;
+  width: 800px;
+  height: 50px;
+}
+
+#kutu6 {
+  background-color: yellow;
+  height: 1000px;
+}
+
+/* img {
+  z-index: 2;
+} */
+
+/* ayrıca absolute özelliğini iki alan içinde de kullanabiliriz. eğer üstteki alana relativ veya fix verir isek altaki alana absolute dediğimiz de altaki alana konumunu artık üstteki alanaa göre alır. yani siz üstteki alanı sayfanın ortasına getirsenizo da gelir */
+
+#kutu7 {
+  background-color: rgb(0, 140, 255);
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: -100px;
+  left: 200px;
+}
+/* işte tam burada kutu 7 deki relativ özelliğini kaldırır isek o zaman kutu 8 body nin en üst sağına gider. */
+#kutu8 {
+  background-color: rgb(157, 87, 163);
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

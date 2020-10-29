@@ -1,0 +1,64 @@
+p{
+    text-indent: 20px;
+}
+.bb{
+    color: red;
+    background-color: khaki;
+    text-align: center;
+}
+
+.cc{
+    color: rgb(0, 255, 85);
+    background-color: rgb(63, 61, 47);
+}
+#resim1{
+    width: 40%;
+    float: left;
+    margin: 10px;
+}
+
+#div1{
+    margin-top: 20px ;
+    border: 1px solid rgb(255, 3, 3) ;
+    width: 100%;
+    height: 150px;    
+    float: left;
+    /* eğer overflow yapmaz iseniz bu şekilde taşma yapar */
+}
+
+#div2{
+    margin-top: 50px ;
+    border: 1px solid rgb(255, 3, 3) ;
+    width: 100%;
+    height: 150px;
+    overflow: auto ;  /* eğer auto yapar iseniz taşma yapmaz scroll bar koyar yana tarafa */
+    float: left;
+}
+
+#div3{
+    margin-top: 10px ;
+    border: 1px solid rgb(255, 3, 3) ;
+    width: 100%;
+    height: 150px;
+    overflow:hidden;/*taşıntıya izin vermez ama taşan yazılar da scroll bar olmadığı için artık gözükmez.*/
+    float: left;
+}
+
+#div4{
+    margin-top: 10px ;
+    border: 1px solid rgb(255, 3, 3) ;
+    width: 100%;
+    height: 150px;
+    overflow:scroll;/* taşıntıya izin verme yan taraftda bir scroll bar koy demektir */
+    overflow-x: hidden; /* bu şekilde X scroll bar(bottom) gizlenir */
+    float: left;
+}
+
+#div5{
+    margin-top: 10px ;
+    border: 1px solid rgb(255, 3, 3) ;
+    width: 100%;
+    height: 150px;
+    overflow:visible; /* taşıntıya izin ver demektir */
+    float: left;
+}
