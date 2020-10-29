@@ -1,0 +1,49 @@
+
+h1{
+    text-align: center;
+}
+
+p{    
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#resim1{
+    width: 200px;
+    float: right;
+    margin-right: 10px;
+}
+#resim2{
+    visibility:hidden; /* normalde olan resmi gizliyorsun ve resmin olduğu alan dolu kalıyor eğer alttaki gibi display none deseydik o zaman resmin olduğu alanı da silecekti*/     /* display:none ; */
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
+
+#resim3{
+    width: 200px;
+    margin-right: 10px;
+}
+
+/* Float özelliği ile LEFT, RİGHT NONE vey INHERIT yapabiliyoruz. */
+/* CLEAR özelliği ile 
+none - Her iki tarafta yüzen öğelere izin verir. Bu varsayılandır
+sol - Sol tarafta yüzen öğelere izin verilmez
+sağ- Sağ tarafta yüzen öğelere izin verilmez
+ikisi de - Sol veya sağ tarafta yüzen öğelere izin verilmez
+miras - Öğe, üst öğesinin net değerini devralır
+*/
+
+/* clear özelliğini html içine boş element oluşturup içine style clear vererek de yapabiliriz */
+
+
+/* p{
+    background-color: rgba(193, 165, 221,0.2) ;
+    height: 1000px;
+    background-image: ;
+    color: white;
+    background-repeat: no-repeat ; resmin tekrar etmesini engelliyor
+    background-attachment: fixed;   resmin sabit kalmasını sağlıyor
+    background-position: right top;
+    background-size:cover ;
+} */
