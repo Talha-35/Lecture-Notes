@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 1rem;
+            display: ;
+            /* buraya NONE yazdığınız anda silinmez ama görüntüsü ekrandan gider */
+            /* display yerine VİSİBİLİTY de kuullanılabilir. tamamen aynıdır. Terk farkı DISPLAY de kapladığı alan da gidiyor. Ama VISIBILITY de o alan olduğu gibi duruyor ama boş gözüküyor */
+        }
+
+        p {
+            display: inline;
+            /* burada p elementini inline yapınca yazılar yan yana geldi. */
+            border: 2px solid red;
+        }
+
+        span {
+            border: 2px solid red;
+        }
+
+        a {
+            display: block;
+            border: 2px solid red;
+        }
+
+        h3 {
+            border: 2px solid red;
+        }
+        b{
+            visibility: hidden;
+            /* VİSİBİLİTY ile DISPLAY tamamen aynıdır. Terk farkı DISPLAY de kapladığı alan da gidiyor. Ama VISIBILITY de o alan olduğu gibi duruyor ama boş gözüküyor */
+            visibility:visible;             
+            border: 2px solid red;
+        }
+
+        div{
+            border: 2px solid red;
+            display: inline-block;
+            /* bunu yapmakta amacımız bir satırı hem ınlıne yapmak hem de block özellilerinden faydalanmak. Mesela INLINE yapınca normalde WİDTH özelliğinden faydalanamıyorsun ama bu şekilde yaparsan faydalanabilirsin. */
+            width: 22%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Bu Block Elementdir</p>
+    <p>Bu da Block Elementdir</p>
+    <br>
+    <h3>Bu bir Block Elementdir</h3>
+    <b>bu bold bir elementtir</b>
+    <br><br>
+    <a href="www.google.com" target="_blank">Bu bir inline Elementti ama artık BLOCK oldu</a>
+    <br>
+    <span>Bu bir inline Elementtir</span>
+    <span>Bu bir inline Elementtir</span><br><br>
+    <div>inline-block özelliği</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</body>
+
+</html>
+
+<!-- bu özellikle ile elementlerin BLACK vey INLINE olma durumlarını değişteriebiliyoruz -->

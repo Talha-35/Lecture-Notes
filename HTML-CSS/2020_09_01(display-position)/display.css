@@ -1,0 +1,50 @@
+body{
+    border:  2px solid rebeccapurple;
+    margin: 50px;
+    padding: 30px;
+    background-color: rgb(204, 248, 164);
+    font-size: 16pt;
+}
+
+h1 {
+    border: 2px solid red;
+    display:inline;     /* böyle yapar isen block özelliği gider inline olur */
+  }
+
+ p {
+    border: 2px solid rgb(123, 155, 185);
+    display: block;
+    color: red;
+  }
+
+  h2 {
+    border: 2px solid red;
+    display: none;
+  }
+
+  h3 {
+    border: 2px solid red;
+    visibility: hidden;    /* burada hidden oluyor ama yerini hala koruyor yani oraya birşey yazamazsın */
+  }
+
+  #span1{
+    border: 2px solid red;
+      display: none;
+  }
+  
+  #span2{
+    background-color: salmon;
+}
+
+#span3{
+    background-color: rgb(173, 36, 104);
+}
+
+#span4{
+    background-color: rgb(120, 178, 243);
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
