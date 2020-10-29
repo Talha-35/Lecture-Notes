@@ -1,0 +1,39 @@
+.box{
+    border: 2px solid black ;
+    height: 35px;
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+#first{
+    overflow:visible; /* bu default değeridir. taşıntıya izin ver demektir */
+}
+#second{
+    overflow:hidden;/* taşıntıya izin verme demektir. ama scroll vermeyeceği için taşan yerleri okuyamayız */  
+    border: 2px solid rgb(13, 233, 86) ;  
+}
+#third{
+    overflow:scroll;/* taşıntıya izin verme yan taraftda bir scroll bar koy demektir */
+}
+/* auto ile Scroll hemen hemen aynı gibidir ama arasında küçük bir fark vardır. Auto eğer metin alanının içine metin sığıyor ise scroll bar getirmez. Ama scroll seçili olur ise sığsa da sığmasa da scroll bar alanı getirir. */
+#fourth{   
+    overflow:auto;/* metin kutuya sığmadığı için yanına bir scroll bar getirdi. */
+    border: 2px solid rgb(233, 13, 13) ;
+}
+#fifth{
+    overflow-x:scroll;/* taşıntıya izin verme x eksenine scroll bar koy demektir */
+ }
+#sixth{
+    overflow-x:hidden;/* x eksenindeki scroll barı gizle demektir  */
+}
+
+#seven{
+    overflow-y:scroll;/*  taşıntıya izin verme y eksenine scroll bar koy demektir  */
+    border: 2px solid rgb(51, 7, 248) ;    
+}
+
+#eight{
+    overflow-y:hidden;/*  y eksenindeki scroll barı gizle demektir  */
+}
+
+
