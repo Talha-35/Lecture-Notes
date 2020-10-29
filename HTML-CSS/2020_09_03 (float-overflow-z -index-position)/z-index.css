@@ -1,0 +1,46 @@
+ /*  
+  Z-endeksi
+Z-endeksi özelliği, bir öğenin yığın sırasını belirtir (hangi öğenin diğerlerinin önüne veya arkasına yerleştirilmesi gerekir).
+eğer Z endeksi kullanmak istiyor iseniz relative- absolute - sticky - fixed bunlardan birini  kullanmak zorundasınız.
+Daha yüksek bir yığına sahip bir öğe, her zaman daha düşük bir yığının önündedir.
+Bir öğe, pozitif veya negatif bir değere sahip olabilir.*/ 
+ 
+/* Yukardaki ve aşağıdakini birlikte kullanınca en yakın konumlandırılmış ebeveyne göre konumlandırılır. Üst öğe, statik dışında herhangi bir konuma sahip olmalıdır. */
+ 
+ /* sıralandırma da kimin numarası büyük ise o üste çıkıyor. eğer numara yok ise veya numaralar eşit ise alttaki her zaman daha baskındır üste çıkar. */
+ 
+ .box{
+    color: white;
+    width: 200px ;
+    height: 200px;
+    font-size: 20pt;
+}
+
+#kutu1{
+    color: black;
+    border: 5px solid rgb(2, 1, 1);
+    background-color: yellow;
+    z-index: 2;
+    position: relative;
+}
+
+#kutu2{
+    border: 5px solid red;
+    background-color: blue;
+    position: relative;
+    margin-top: -50px;
+    /* top: 0px;
+    right: 0px; */
+    z-index: 1;
+}
+
+
+#kutu3{
+    border: 2px solid red;
+    background-color: green;
+    position: relative;
+    top: -250px;  
+    left: 100px;  
+    z-index: 3;
+}
+
