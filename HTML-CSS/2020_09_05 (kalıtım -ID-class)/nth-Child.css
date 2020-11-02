@@ -1,0 +1,39 @@
+p {
+    font-size: 1.5em;
+}
+
+p:first-child {
+    color: blue;
+}
+/* bu ikisi aynı sonucu verir */
+p:nth-child(1) {
+    color: blueviolet;
+}
+
+p:last-child {
+    color: red;
+}
+/* bu ikisi aynı sonucu verir */
+p:nth-child(5) {
+    color: rgb(255, 0, 157);
+}
+
+p:nth-child(3) {
+    /* bu üçüncü çocuğu seç demektir */
+    background-color: rgb(89, 151, 192);
+}
+
+p:nth-child(even) {
+    /* bu çiftleri seç demektir. Eğer içine ODD der iseniz tekleri seçer */
+    background-color: rgb(137, 216, 121);
+}
+
+ul li {
+    font-size: 1.5em;
+    list-style-type:none ;
+}
+
+ul li:nth-child(n+5){
+    /* bu listedeki 5. elemetten başla seçmeye demektir. */
+    color: yellowgreen;
+}
