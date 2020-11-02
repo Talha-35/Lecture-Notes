@@ -1,0 +1,52 @@
+p {
+    /* bütün paragrafları etkiler */
+    color: red;
+}
+
+div a {
+    /* div içindeki bütün CHİLD A elementlerini etkiler. (torun a elementlerini da etkiler.) */
+    background-color: rgb(209, 59, 197);
+    color: rgb(132, 207, 226);
+}
+
+div > p {
+    /* sadece div içindeki sadece CHİLD paragrafları etkiler */
+    background-color: rgb(14, 11, 11);
+    color:rgb(191, 216, 196);
+}
+
+div > article > b {
+    /* sadece div içindeki article içindeki b değerini etkiler */
+    color: purple;
+    background-color: rgb(132, 207, 226);}
+
+
+h5, span{  /* bu şekilde iki veya daha fazla seçenek aynı satırda yazılabilir */
+    background-color: yellow;
+}
+
+h3 ~ p {
+    /* h3 ile kardeş pozisyonunda olan bütün paragrafları etkiler */
+    background-color: rgb(213, 236, 175);
+}
+
+.inss ~ div { /* inns ile aynı seviyede olan(kardeş) divleri seç demek */
+    font-size: 19pt;
+    background-color: rgb(45, 0, 247);
+    color: white;
+}
+
+h2 + p {
+    /* h2 ile kardeş pozisyonunda olan ilk paragrafı etkiler */
+    color: rgb(30, 255, 0);
+}
+
+.inss + pre { /* ins dan hemen sonra gelen pre i seç demek */
+    font-size: 12pt;
+    background-color: rgb(130, 238, 202);
+}
+
+#dat.dut{ /* hem id si #dat olan hemde class ı .dut olanı seç demektir */
+    color:blue;
+    background-color: coral;
+}
