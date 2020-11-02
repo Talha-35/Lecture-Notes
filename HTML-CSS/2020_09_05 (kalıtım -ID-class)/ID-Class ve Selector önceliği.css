@@ -1,0 +1,41 @@
+/* selector demek. Css ekranındaki aşağıda parantez öncesinde yazılan değerlere verilen addır. */
+
+
+*{
+    color:black ;
+}
+
+body { /* bu body bir selector'dur. */
+    margin: 10px;
+    border: 2px solid black;
+    background-color: rgb(252, 246, 246);
+}
+
+p {
+    color:red !important;
+    /* bütün paragrafları etkiler */
+    /* normalde öncelik sırasına göre ID>CLASS>SELECTOR bunun tek istisnası !important etikedidir. bunu yazar iseniz hepsinin önüne geçer */
+}
+
+pre {
+    background-color: darksalmon ;
+    /* Bu çalışmaz çünkü INLINE içinde PRE ye backgroaund color değer verilmiş. Ama buraya !important yazsaydık çalışırdı.*/
+}
+
+.fut { /* bu .fut bir selector'dur. */
+    color: yellow;
+    background-color: teal;
+}
+
+#fb { /* bu #fb bir selector'dur. */
+    color: black;
+}
+
+.bas { /* bu .bas bir selector'dur. */
+    color: blue;
+}
+
+.basket p {
+    background-color: rgb(212, 85, 85);
+}
+

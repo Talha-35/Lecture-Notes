@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="ID-Class ve Selector önceliği.css" >  
+    
+
+</head>
+    <!--    IMPORTANT
+     normalde öncelik sırasına göre ID>CLASS>SELECTOR bunun tek istisnası !important etikedidir. bunu yazar iseniz hepsinin önüne geçer.
+     Mesela normalde Inline  > ınternal > External sıralama bu şekildedir. 
+     Yani siz html içinde (INLINE da) bir paragrafa blue değeri verdi iseniz external da yani CSS içinde P değerine kırmızı verseniz de paragraf mavi kalır. Çünkü Inline Externalı ezer. Bundak kurtulmanın yolu CSS içineki p nin yanına !important yazmanızdır.
+     böyle yazar iseniz bu en öncelikli alan olur.
+    -->
+
+
+<body>
+
+    <div class="futbol">
+        <h1>Takımlar</h1><!-- mesela burda h1 DİV etiketinin CHILD - çocuğu olur. -->
+        <p id="fb" class="fut">Fenerbahçe</p>
+        <p class="fut">Galatasaray</p>
+    </div>
+
+    <!-- ayrıca class ile alt etiketlere de erişebilirsiniz. Mesela (.basket p {color:blue} ) dediğin zaman sadece onun rengi değişir -->
+    <div class="basket">
+        <h3>FUTBOL</h3>
+        <b class="bas">Basket Takımı</b>
+        <br>
+        <b class="bas">basket 2 Takımı</b>
+        <br>
+        <a href="">Lorem ipsum dolor sit amet.</a>
+    </div>
+
+    <div>
+        <h1>bu h1 elementidir.</h1>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+
+    <pre style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eum!</pre>
+    
+    <a href="">Lorem ipsum dolor sit amet.</a>
+    <ul>
+        <li>ahmet</li>
+        <li>mehmet</li>
+    </ul>
+
+    
+
+</body>
+
+</html>
