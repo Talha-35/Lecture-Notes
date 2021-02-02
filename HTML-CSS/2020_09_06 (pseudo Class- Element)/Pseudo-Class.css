@@ -1,0 +1,71 @@
+a{
+    margin: 40px;
+    outline:2PX solid black;
+    transition:all ease-in-out 300ms ;
+    /* fare üzerine geldiği zaman yavaş yavaş akış verme verme */
+}
+
+a:link{
+    /* tıklanmadan önce renk veriyor */
+    color: red;
+}
+
+a:visited{
+    /* tıklandıktan sonra style değiştiriyor */
+    color: black;
+}
+
+a:hover{
+    /* fare üzerine geldiği zaman stil verme */
+    color: mediumspringgreen;
+    border: 2PX solid black;
+    border-radius: 100px;
+    cursor: progress;    
+}
+
+a:active {
+    /* tam tıklandığı esna da stil veriyor */
+    color: blue;
+}
+
+#clar {
+    margin: 40px;
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+    background-color: burlywood;
+    transition:all ease-in-out 300ms ;
+}
+
+#clar:link{
+    /* tıklanmadan önce renk veriyor */
+    color: red;
+}
+
+#clar:visited{
+    /* tıklandıktan sonra style değiştiriyor */
+    color: rgb(9, 240, 28);
+}
+
+#clar:hover{
+    /* fare üzerine geldiği zaman stil verme */
+    color: rgb(255, 249, 249);
+    background-color: cadetblue;
+    border-radius: 10px;
+    cursor: none;   
+}
+
+#clar:active{
+    /* tam tıklandığı esna da stil veriyor */
+    color: rgb(255, 0, 140);
+}
+
+b {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+div:hover + b {
+    display: inline-block;
+}

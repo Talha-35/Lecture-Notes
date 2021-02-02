@@ -1,0 +1,70 @@
+
+img[title="ceylan"] {
+    /* bu şekilde sadece title da ceylan geçenleri seç diyebiliyoruz */
+    border: 5px solid red;
+    
+}
+
+img[width="33%"] {
+    /* bu şekilde width de 33 olanları seç diyebiliyoruz */
+    border: 5px solid rgb(55, 0, 253);
+    
+}
+
+img[alt="kafe"] {
+    /* bu şekilde alt de kafe olanları seç diyebiliyoruz */
+    border: 5px solid rgb(25, 253, 44);
+}
+
+/* a[href="https://www.google.com"]{ 
+    bu şekilde href de google yazan linki seç diyebiliyoruz
+    background-color: rgb(230, 226, 15);
+    font-size: 18PT;
+}      */
+
+p[title^="Bu"] { /* bu şekilde bu ile başlayanları seç diyebiliyoruz */
+    background-color: rgb(175, 236, 175);
+}
+p[title $="paragraf"] { /* bu şekilde paragraf ile bitenleri seç diyebiliyoruz */
+    background-color: rgb(102, 26, 243);
+}
+p[title ~="can"] { /* bu şekilde içinde can geçenleri seç diyebiliyoruz */
+    background-color: rgb(243, 26, 26);
+}
+   
+p::first-letter{/* bu şekilde iki nokta koyarak paragrafın ilk harfini seçebilirsin */
+    color: red;
+}
+h1::first-line{/* bu şekilde iki nokta koyarak ilk satırı seçebilirsin */
+    color: blue;
+    background-color: yellow;
+}
+span::after{/* bu şekilde sonuna birşeyler ekleyebilrisin. BEFORE diyerek de önüne eklersin */
+    content: "sonuna kelime ekledim";
+    background-color:tomato ;
+    /* content: url(); buraya url içinde resim link veya icon koyabilirsiniz. */
+}  
+h1::before{
+    content: "\2742" ;
+}
+
+h3:last-of-type        {/* bu şekilde h3 tagları içinde sonuncuyu seçer seçebilirsin. FİRST ile de kullanbilirsiniz */
+    background-color:rgb(71, 255, 132) ;
+}
+
+#selec::selection{
+    /* satırı seçtiğin zaman renk font vs verebiliyorsun */
+    text-shadow: 5px 1px 0 red;
+    color: yellow;
+    background: red;
+}
+
+#fname:focus{/* tıklandığı zaman içini sarı yapıyor */
+    background-color: yellow;
+}
+
+#lname:focus{/* tıklandığı zaman içini sarı yapıyor */
+    background-color: blue;
+    outline: none;
+}
+
