@@ -1,0 +1,58 @@
+.container {
+  font-family:sans-serif;
+  margin:0 auto;
+  color:rgb(255, 255, 255);
+  padding:20px; /* biraz açalım doğru düzgün gözüksün */
+  width:1000px;
+  height:100vh;   /* 1000px aynı gibi */
+  text-transform:capitalize;
+  
+  display:grid;
+  grid-gap:20px;  /* kutular arası boşluk vermek için kullanılır*/
+  /* grid-row-gap: 5px;
+  grid-column-gap: 10px ;
+  yukardaki ile aynı sonucu verir
+  grid-gap: 5px 10px; */
+  
+  grid-template-rows:1fr 2fr 4fr 1fr ;
+  grid-template-columns:repeat(4,1fr); 
+    /* üstteki kod ile aynı:
+   grid-template: 1fr 2fr 4fr 1fr / repeat(4,1fr) ; */
+}
+.container > * {
+    
+    background-color:royalblue;
+    padding:20px;
+    font-size:20px;
+  }
+  
+.header{
+  /* grid-area:1/1/2/-1; */
+
+  /* grid-row: 1 / 2;
+  grid-column: 1 / -1 ; */
+  
+  
+  grid-row-start:1 ; 
+  /* (satırdaki ikinci çizgi) */
+  grid-row-end: 2; 
+  /* (satırdaki üçüncü çizgi) */
+  grid-column-start:1 ; 
+  /* (satırdaki üçüncü çizgi) */
+  grid-column-end: -1; 
+  /* (sütundaki üçüncü çizgi) */
+  
+
+}
+.sidebar{
+  grid-area:2/4/4/5
+
+}
+
+.main{
+  grid-area:3/1/4/4;
+}
+
+.footer{
+  grid-area:4/1/5/-1;
+}

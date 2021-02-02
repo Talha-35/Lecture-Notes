@@ -1,0 +1,128 @@
+*{
+    /* m00 */
+    /* m0 yapılır ise margin opx yapar */
+    margin:0;
+    padding:0;
+}
+
+.items{
+    color:white;
+    background-color: burlywood;
+    width:80px;
+    height: 100px;
+    font-size:20px;
+    padding:20px;
+    margin:6px;
+    text-align: center;
+    /* display: table; */
+    /* flex-shrink: 0; */   
+}
+
+.flex-container{
+    border:6px solid red;
+    display:flex;
+    height:700px;
+    background-color: rgb(205, 234, 235);
+
+    /* flex-direction. yön tayini yapar. 4çeşidi vardır
+    : row (default) | row-reverse | column (dikey) | column-reverse;(dikey aşağıdan yukarı) */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* flex-wrap: sayfaya sığmadığı zaman aşağı indirme özelliğidir. Taşma yapmaz 3 çeşidi vardır : nowrap default değeridir | wrap | wrap-reverse; */
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* flex-flow 6 çeşidi vardır: 
+    column nowrap | column wrap | column wrap-reverse | row nowrap (default) | row wrap | row wrap-reverse; */
+    /* flex-flow:row nowrap; */
+    /* flex-flow:row wrap; */
+    /* flex-flow:row-reverse wrap; */
+    /* flex-flow:column wrap;  */
+    /* flex-flow:column-reverse wrap; */
+    /* flex-flow:column-reverse wrap-reverse; */
+
+    /* justify-content yatay hizalama yapmaya yarar ve 6 çeşidi vardır: flex-start | flex-end | center | space-between | space-around | space-evenly*/
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    /*  align-items dikey hizalama yapmaya yarar ve 5 çeşidi vardır: stretch ---default | flex-start | flex-end | center | baseline |; */
+    /* align-items: stretch; */
+    /* align-items:flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+
+    /* align-content 6 çeşidi vardır: flex-start | flex-end | center | space-between | space-around | stretch;*/
+    /* align-content: stretch; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+}  
+
+/* not : align-items:center; ile justify-content: center; aynı anda kullanılır ise tam merkezre gelir */
+
+
+.items1{
+    /* width:50px;
+    height:50px; */
+    /* font-size: 70px; */
+     /* flex-grow: 1; */
+    /* order: 3; */
+    /* order sıralamayı belirler. diğerlerinden farkı item ların içine yazılır. */
+    /* padding-top: 180px; */
+    /* flex: 2 0 200px; */
+    /* align-self: flex-start; */
+    background-color: blue;
+}
+.items2{
+    /* width: 10%;
+      height: 15%; */
+       /* flex-grow: 1; */
+    /* order: 1 */
+    /* flex-basis: 40%; */
+    /* flex: 2 2 250px; */
+    /* align-self: flex-end; */
+    /* bazı kutuların tek başına hareket etmesini istiyor isek bu şekilde bir komut verebiliriz */
+    background-color: yellow;
+    color: black;    
+}
+
+.items3{
+    /* font-size: 100px; */
+    /* width:50px;
+    height:50px; */
+    /* font-size: 100px; */
+    /* order: 2; */
+     /* flex-grow: 3; */
+     /* align-self: center; */
+    flex-basis: 150px;  
+    /* aynı width gibidir. genişlik verir. */
+    background-color: green;
+}
+
+.items4{
+    /* width:50px;
+    height:50px; */
+    /* font-size: 100px; */
+    /* flex-grow: 1; alan geniş olur ise bu değeri verdiğiniz sütun boşluğu doldurur. */
+      /* order: -1; */
+    /* flex-grow: 0; */
+    /* flex-shrink: 4; */
+    /* align-self: baseline; */
+    background-color:red;
+}
+
+.items5 {
+    align-self: stretch;
+    background-color: rgb(255, 0, 200);
+  }

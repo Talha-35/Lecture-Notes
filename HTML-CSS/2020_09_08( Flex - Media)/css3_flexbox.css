@@ -1,0 +1,139 @@
+/* The flex container properties are:
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content  */
+
+/* The flex Item properties are:
+
+order  :sıralama vermek için kullanılır
+flex-grow : kutulara değer vererek satıra yayma yapabilirsiniz
+flex-shrink
+flex-basis : aynı width gibidir. genişlik verir. px veya 40 de verilebilir.
+flex
+align-self  : bazı kutuların tek başına hareket etmesini istiyor isek bu şekilde bir komut verebiliriz */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* align-items: center;
+    justify-items: center; */
+}
+
+body {
+  border: 5px solid red;
+}
+
+.kutu {
+  border: 2px solid black;
+  width: 250px;
+  height: 60px;
+}
+
+.flex-container1 {
+  display: flex;
+  /* flex-direction: row ;değeri default değerdir yatay  yapar */
+  background-color: red;
+  width: 200px;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row-reverse;
+  /* flex-direction. yön tayini yapar. 4çeşidi vardır
+    : row (default) | row-reverse | column (dikey) | column-reverse;(dikey aşağıdan yukarı) */
+
+  /* flex-direction: row-reverse; */
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  
+  width: 200px;
+  background-color: rgb(187, 255, 0);
+}
+.flex-container3 {
+  display: flex; 
+  flex-wrap: wrap; 
+  /* sayfaya sığmadığı zaman aşağı indirme özelliğidir. Taşma yapmaz */
+  /* flex-wrap 3 çeşidi vardır
+    : nowrap default değeridir | wrap | wrap-reverse; */
+
+  /* flex-wrap: wrap; */
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  background-color: rgb(0, 255, 170);
+}
+
+.flex-container4 {
+  display: flex;
+  flex-flow: column nowrap;
+  /* flex-flow 6 çeşidi vardır: 
+    column nowrap | column wrap | column wrap-reverse | row nowrap (default) | row wrap | row wrap-reverse; */
+
+  /* flex-flow:row nowrap;  */ 
+  /* flex-flow:row wrap; */
+  /* flex-flow:row-reverse wrap; */
+  /* flex-flow:column wrap;  */
+  /* flex-flow:column-reverse wrap; */
+  /* flex-flow:column-reverse wrap-reverse; */
+  background-color: rgb(0, 174, 255);
+}
+
+.flex-container5 {
+  display: flex;
+  
+  /* justify-content yatay hizalama yapmaya yarar ve 6 çeşidi vardır: 
+    flex-start | flex-end | center | space-between | space-around | space-evenly*/
+
+  justify-content: flex-start;
+  /* en başa yaslar */
+  /* justify-content: flex-end; */
+  /* en sona yaslar */
+  /* justify-content: center; */
+  /* tam ortaya konumlar  */
+  /* justify-content: space-between; */
+  /* birini en başa diğerini en sola diğerlerini de ortaya eşit dağıtır */
+  /* justify-content: space-around; */
+  /* boşluk ile boşluk ile bitirir ama ilk ve son boşluk biraz küçük diğerleri büyük olur. */  
+  /* justify-content: space-evenly; */
+  /* boşluk ile boşluk ile bitirir ve bütün boşluklar aynı boyutta olur. araya da itemleri dağıtır. */
+
+  background-color: rgb(255, 251, 0);
+}
+
+.flex-container6 {
+  display: flex;
+  
+  /*  align-items dikey hizalama yapmaya yarar ve 5 çeşidi vardır: 
+    stretch | flex-start | flex-end | center | baseline |; */
+
+  /* align-items: wrap; */
+  /* align-items: stretch;---default */
+  /* align-items:flex-start; */
+  /* align-items: flex-end; */  
+  /* align-items:center; */
+  /* align-items: baseline; */
+
+  background-color: rgb(0, 102, 255);
+}
+
+.flex-container7 {
+  display: flex;
+  align-content: nowrap;
+  background-color: rgb(119, 0, 255);
+  /* align-content 6 çeşidi vardır: 
+    flex-start | flex-end | center | space-between | space-around | stretch;
+  */
+
+  /* align-content: stretch; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+}

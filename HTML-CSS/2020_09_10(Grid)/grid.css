@@ -1,0 +1,63 @@
+.container {
+  display: grid;
+  grid-template-rows: 150px 250px;
+  grid-template-columns: 100px 200px 300px;
+  /* yukardaki ile aynı sonucu verir.  grid-template: 150px 250px /  100px 200px 300px; */
+  /* grid-template: 150px 250px /  100px repeat(3,200px);  şeklinde yazılabilir. önce 100 px lik bir sütun sonrada 3 tane 200 px lik sütun yapar.*/
+  /* grid-template: 150px 250px /  100px repeat(3,1fr); şeklinde yazılabilir. önce 100 px lik bir sütun sonrada  kalan alanı 3 e böler 3 sütun yapar */
+
+  grid-row-gap: 5px;
+  grid-column-gap: 10px ;
+  /* yukardaki ile aynı sonucu verir. grid-gap: 5px 10px; */
+}
+.container > * {
+    padding:20px;
+    
+  }
+  
+.box1{
+  background-color: chartreuse;
+  /* grid-row-start:2 ; (satırdaki ikinci çizgi)
+  grid-row-end: 3; (satırdaki üçüncü çizgi)
+  grid-column-start:2 ; (satırdaki üçüncü çizgi)
+  grid-column-end: 3; (sütundaki üçüncü çizgi)
+  bu işlem 1. kutuyu 5. kutunun yerine alır. */
+  
+  /* bu da yukarıdaki ile aynı sonucu verir kısa yazım halidir
+  grid-row: 2 / 3;
+  grid-column: 2 / 3; */
+}
+.box2{
+  background-color:chocolate;
+}
+
+.box3{
+  background-color:cornflowerblue;
+}
+
+.box4{
+  background-color:rgb(139, 0, 97);
+  grid-row: 2 / 3;
+  grid-column: 1/ 3 ;
+
+  /* bu da yukarıdaki ile aynı sonucu verir kısa yazım halidir
+   grid-area: 2 / 1 / 3 / 3; */
+}
+
+.box5{
+  background-color:dimgray;
+}
+
+.box6{
+  background-color:lightpink;
+  /* order: -1; */
+  /* order özelliği ise sıralamayı belirliyor. mesela altı kutu var. ve siz altıncı kutuya order: -1 der iseniz sırlaamda en başa gider */
+}
+
+.box7{
+  background-color:rgb(13, 80, 46);
+}
+
+
+/* grid-template: 150px 250px /  150px 3fr 1fr; bu da 3 sütun yap ilk sütun 150 px olsun diğer sütunu da kalan alanı 4 e böl ikinci sütunu son sütunun üç katı yap demektir. */
+
