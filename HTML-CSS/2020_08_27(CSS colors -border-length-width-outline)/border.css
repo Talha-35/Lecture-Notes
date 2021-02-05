@@ -1,3 +1,10 @@
+/* border: 10px solid red  ;
+yukarıdaki ile aşağıdaki aynı şey demektir.
+border-width: 10px;
+border-style: solid;
+border-color: red; */
+
+
 body{
     font-size: 18pt;
 }
@@ -7,7 +14,7 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 150px;
-    /* bütün değerler birbirine eşit olur ise o zaman değeri yuvarlak yapar. */
+    /* bütün değerler birbirine eşit olur ise o zaman değeri yuvarlak yapar. yani radius width ve height a eşit olur ise yuvarlak oluşur */
 }
 
 
@@ -27,6 +34,7 @@ body{
 #part2{
     border: 20px hidden rgb(147, 218, 66);
     width: 33%;
+    border-left-width: 5px;
 }
 #part3{
     border: 20px none red;
@@ -69,6 +77,12 @@ body{
 }
 #part10{
     border: 20px outset red;
+    width: 33%;
+}
+#part11{
+    border-left-color: rgb(147, 218, 66);
+    border-left-width: 5px;
+    border-left-style: solid;
     width: 33%;
 }
 
