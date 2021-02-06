@@ -21,7 +21,7 @@ body{
     word-spacing: 2px; /* Bir metinde sözcükler arasında boşluğu belirtmek için kullanılır. (- değerde verilebilir) */
     direction:rtl ; /* Bir elemanın metin yönünü değiştirmek için kullanılır: (rtl veya ltr) */
     text-shadow: 11px 5px 1px  blue; /* gölgelendirme yapıyor 1. horizontal (yatay-sağa hizalama) 2. vertical (dikey - aşağı hizalama) 3. blur effect (bulanıklılık seviyesi ) */
-    white-space: ; /* beyaz boşlukları görmenizi sağlıyor mesela sen satır içinde bir tab boşluk bıraktın CSS bunu tanımaz. ama white-space özeeliğini (PRE) yapar isen tanır 
+    white-space: pre; /* beyaz boşlukları görmenizi sağlıyor mesela sen satır içinde bir tab boşluk bıraktın CSS bunu tanımaz. ama white-space özeeliğini (PRE) yapar isen tanır 
     nowrap : default
     pre : nasıl yapar isen öyle olur
     pre-line : satırları korur ama arada gereksiz boşlukları siler
