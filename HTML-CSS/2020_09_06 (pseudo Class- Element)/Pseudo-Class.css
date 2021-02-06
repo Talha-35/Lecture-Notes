@@ -1,6 +1,6 @@
 a{
     margin: 40px;
-    outline:2PX solid black;
+    outline:2px solid black;
     transition:all ease-in-out 300ms ;
     /* fare üzerine geldiği zaman yavaş yavaş akış verme verme */
 }
@@ -10,22 +10,23 @@ a:link{
     color: red;
 }
 
-a:visited{
-    /* tıklandıktan sonra style değiştiriyor */
-    color: black;
-}
-
 a:hover{
     /* fare üzerine geldiği zaman stil verme */
     color: mediumspringgreen;
-    border: 2PX solid black;
-    border-radius: 100px;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 10px;
     cursor: progress;    
 }
 
 a:active {
     /* tam tıklandığı esna da stil veriyor */
     color: blue;
+}
+
+a:visited{
+    /* tıklandıktan sonra style değiştiriyor */
+    color: black;
 }
 
 #clar {
@@ -42,10 +43,6 @@ a:active {
     color: red;
 }
 
-#clar:visited{
-    /* tıklandıktan sonra style değiştiriyor */
-    color: rgb(9, 240, 28);
-}
 
 #clar:hover{
     /* fare üzerine geldiği zaman stil verme */
@@ -60,12 +57,40 @@ a:active {
     color: rgb(255, 0, 140);
 }
 
+#clar:visited{
+    /* tıklandıktan sonra style değiştiriyor */
+    color: rgb(9, 240, 28);
+}
+
 b {
     display: none;
     background-color: yellow;
-    padding: 20px;
+    padding: 5px;
 }
 
 div:hover + b {
     display: inline-block;
 }
+
+img {
+    display: none;
+    width: 300px;
+    margin-top: 25px;
+    position: relative;
+    left: 200px;
+    top: -50px;
+}
+div:hover + img {
+    display: inline-block;
+}
+
+input {
+    font-size: 20;
+    padding: 15px;
+    border-radius: 5px;
+}
+input:focus {
+    outline: 0;
+    border :1px solid rgb(255, 0, 140)
+}
+
