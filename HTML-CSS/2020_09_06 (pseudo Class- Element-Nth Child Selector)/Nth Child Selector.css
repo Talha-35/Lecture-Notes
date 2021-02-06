@@ -1,0 +1,34 @@
+
+img[title="ceylan"] {
+    /* bu şekilde sadece title da ceylan geçenleri seç diyebiliyoruz */
+    border: 5px solid red;
+    
+}
+
+img[width="33%"] {
+    /* bu şekilde width de 33 olanları seç diyebiliyoruz */
+    border: 5px solid rgb(55, 0, 253);
+    
+}
+
+img[alt="kafe"] {
+    /* bu şekilde alt de kafe olanları seç diyebiliyoruz */
+    border: 5px solid rgb(25, 253, 44);
+}
+
+/* a[href="https://www.google.com"]{ 
+    bu şekilde href de google yazan linki seç diyebiliyoruz
+    background-color: rgb(230, 226, 15);
+    font-size: 18PT;
+}      */
+
+p[title^="Bu"] { /* bu şekilde bu ile başlayanları seç diyebiliyoruz */
+    background-color: rgb(175, 236, 175);
+}
+p[title $="paragraf"] { /* bu şekilde paragraf ile bitenleri seç diyebiliyoruz */
+    background-color: rgb(102, 26, 243);
+}
+p[title ~="can"] { /* bu şekilde içinde can geçenleri seç diyebiliyoruz */
+    background-color: rgb(243, 26, 26);
+}
+   

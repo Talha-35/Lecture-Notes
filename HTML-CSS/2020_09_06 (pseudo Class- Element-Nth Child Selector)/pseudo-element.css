@@ -1,0 +1,39 @@
+
+   
+p::first-letter{/* bu şekilde iki nokta koyarak paragrafın ilk harfini seçebilirsin */
+    color: red;
+}
+h1::first-line{/* bu şekilde iki nokta koyarak ilk satırı seçebilirsin */
+    color: blue;
+    background-color: yellow;
+}
+span::after{/* bu şekilde sonuna birşeyler ekleyebilrisin. BEFORE diyerek de önüne eklersin */
+    content: "sonuna kelime ekledim";
+    background-color:tomato ;
+    /* content: url(); buraya url içinde resim link veya icon koyabilirsiniz. */
+}  
+h1::before{
+    content: "\2742" ; /* bu şekilde başına icon ekledim";  */
+    /* content: "başına kelime ekledim";  */
+}
+
+h3:last-of-type        {/* bu şekilde h3 tagları içinde sonuncuyu seçer seçebilirsin. FİRST ile de kullanbilirsiniz */
+    background-color:rgb(71, 255, 132) ;
+}
+
+#selec::selection{
+    /* satırı seçtiğin zaman renk font vs verebiliyorsun */
+    text-shadow: 5px 1px 0 blue;
+    color: yellow;
+    background: blue;
+}
+
+#fname:focus{/* tıklandığı zaman içini sarı yapıyor */
+    background-color: yellow;
+}
+
+#lname:focus{/* tıklandığı zaman içini sarı yapıyor */
+    background-color: blue;
+    outline: none;
+}
+
