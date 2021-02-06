@@ -15,8 +15,15 @@
             height: 100px;
             /* display: table-cell;
             vertical-align: middle;
-             */
-             /* bu şekilde yaparak yazıyı ortaya alabiliriz */
+            */
+            /* bu şekilde yaparak yazıyı ortaya alabiliriz */
+        }
+        .link2 {
+            display:inline-block ;
+            border: 3px solid red;
+            width: 300px;
+            height: 100px;
+            background-color: chartreuse;
         }
         
     </style>
@@ -81,13 +88,28 @@
     <h1 style="display: inline; border: 1px solid red;">bu normalde bir block elementtir ama display ile inline yaptık </h1>
     <b style="display: block; border: 1px solid red; background-color: darksalmon;">bu normalde bir inline elementtir ama display ile block yaptık</b>
     <b style="border: 1px solid red;">bu  bir inline elementtir</b>
-    <br><br>
+    <br><br><br><br><br><br>
     <SPan style="font-size: 20pt; background-color: chartreuse;" >INLINE-BLOCK KONUSU</SPan>
     <br><br>
-    <span>inline elementlere width ve height değerleri yükleyemezsiniz. margin ve padding değerleri uygulayabilirsiniz aMA INLINE/BLOCK yaptığınız zaman tamamen block olup bütün satırı kaplamıyor ama block özelliğindeki gibi width ve height verebiliyoruz</span>
-    <br><br>
+    <pre>
+        Inline elementlere width ve height değerleri yükleyemezsiniz. 
+        Margin ve padding değerleri uygulayabilirsiniz .
+        Block yapar iseniz o zaman da bütün satırı kaplar.
+        INLINE/BLOCK yaptığınız zaman ise tamamen block olup bütün satırı kaplamıyor ama block özelliğindeki gibi width ve height verebiliyoruz</pre>
+        <br><br><br><br><br><br>
     <b id="star">bu ınline/block bir metin yapıldı. bu sebeple width height eklenebildi.</b>
     <b>bu bir inline elementtir</b>
+    <br><br>
+    <a href="https://www.udemy.com/course/komple-sifirdan-web-gelistirme-kursu/learn/lecture/18708888#overview" target="_blank" class="link1">normal link</a><br><br>
+    <span>yukarıdaki a elementi inline iken aşağıdaki a elementi inline-block bir elementtir. Böylece aşağıdaki elemente width ve height verebildik. böylece boşluklara tıklayınca da link açılıyor. oysa üstteki a elementinde ise sadece yazının üstüne geldiğimiz zaman link çalışıyor</span>
+    <br><br>
+    <a href="https://www.udemy.com/course/komple-sifirdan-web-gelistirme-kursu/learn/lecture/18708888#overview" target="_blank" class="link2">inline-block link</a>
 
 </body>
 </html>
+
+<!-- 
+    Inline elementlere width ve height değerleri yükleyemezsiniz. 
+    Margin ve padding değerleri uygulayabilirsiniz .
+    Block yapar iseniz o zaman da bütün satırı kaplar.
+    INLINE/BLOCK yaptığınız zaman ise tamamen block olup bütün satırı kaplamıyor ama block özelliğindeki gibi width ve height verebiliyoruz -->
