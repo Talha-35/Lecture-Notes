@@ -38,7 +38,7 @@ body {
   display: flex;
   /* flex-direction: row ;değeri default değerdir yatay  yapar */
   background-color: red;
-  width: 200px;
+  width: 400px;
 }
 
 .flex-container2 {
@@ -52,7 +52,7 @@ body {
   /* flex-direction: column; */
   /* flex-direction: column-reverse; */
   
-  width: 200px;
+  width: 400px;
   background-color: rgb(187, 255, 0);
 }
 .flex-container3 {

@@ -77,7 +77,9 @@
     height:50px; */
     /* font-size: 70px; */
      /* flex-grow: 1; */
-    /* order: 3; */
+     /* Flex-Grow ise alanı paylaştırmaya yarar. birisine 1 diğerine 2 der iseniz o zaman birisi alanın üçte birini diğeri ise üçde ikisini kapsar */
+     /* not : Flex-Grow yerine Flex : 1 de yazılabilir. */
+    order: 3;
     /* order sıralamayı belirler. diğerlerinden farkı item ların içine yazılır. */
     /* padding-top: 180px; */
     /* flex: 2 0 200px; */
@@ -88,7 +90,7 @@
     /* width: 10%;
       height: 15%; */
        /* flex-grow: 1; */
-    /* order: 1 */
+    order: 9 ;
     /* flex-basis: 40%; */
     /* flex: 2 2 250px; */
     /* align-self: flex-end; */
@@ -102,10 +104,10 @@
     /* width:50px;
     height:50px; */
     /* font-size: 100px; */
-    /* order: 2; */
+    order: 1;
      /* flex-grow: 3; */
      /* align-self: center; */
-    flex-basis: 150px;  
+    flex-basis: 190px;  
     /* aynı width gibidir. genişlik verir. */
     background-color: green;
 }
@@ -115,14 +117,14 @@
     height:50px; */
     /* font-size: 100px; */
     /* flex-grow: 1; alan geniş olur ise bu değeri verdiğiniz sütun boşluğu doldurur. */
-      /* order: -1; */
-    /* flex-grow: 0; */
-    /* flex-shrink: 4; */
-    /* align-self: baseline; */
-    background-color:red;
-}
-
-.items5 {
+      order: -1;
+      /* flex-shrink: 4; */
+      /* align-self: baseline; */
+      background-color:red;
+    }
+    
+    .items5 {
+    order: 8;
     align-self: stretch;
     background-color: rgb(255, 0, 200);
   }
