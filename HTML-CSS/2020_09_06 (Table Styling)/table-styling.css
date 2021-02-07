@@ -1,10 +1,12 @@
 table, tr, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    /* borderları birleştirmek için collapse kullanabilir */
 }
 table {
     width: 50%;
     margin: 0 auto;    
+    /* bu tabloyu ortalamaya yarar. margin-left: auto:  margin-right: auto; desek de aynı şey esasında */
 }
 
 td, th {
