@@ -1,0 +1,39 @@
+
+body {
+    background-color: red;
+}
+
+@media (max-width : 768px) {
+    body {
+        background-color: blue;
+    }
+
+    p {
+        display: none;
+    }
+}
+/* NOT : 0 dan 768px e kadar geçerli olan stiller için yukardaki kod kullanılır */
+/* TABLET için 768px yeterlidir */
+
+@media (max-width : 500px) {
+    body {
+        background-color: green;
+    }
+
+    p {
+        display: block ;
+    }
+}
+/* Telefonlar genelde 500 px altında olduğu için bu şekilde yazar iseko zamanda telefonlar için geçerli stilleri vermiş oluruz. */
+
+
+
+/* NOT : @media only screen and (max-width : 768px) bazı yerlerde böylede geçer. Bu sadece tablet telefon veya bilglisyar için geçerli demektir. Oysa sadece media der iseniz herşeyi kapsar */
+
+@media (min-width : 768px) {
+    p {
+        display: none;
+    }
+}
+
+/* NOT : En geniş ekran dan 768px e kadar geçerli olan stiller için yukardaki kod kullanılır */
