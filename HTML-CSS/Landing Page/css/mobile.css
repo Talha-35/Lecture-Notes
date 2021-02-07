@@ -1,0 +1,40 @@
+.navbar {
+    /* display: flex; */
+    flex-direction: column;
+    padding: 0.5rem 0;
+    overflow: hidden;
+}
+.navbar h1 {
+   font-size: 1.5rem;
+}
+.navbar {
+    font-size: 0.8rem;
+}
+
+.home img {
+    width: 70%;
+  }
+
+.egitim .items {
+    flex-direction: column;
+}
+
+.egitim h2 {
+    padding: 0.2rem 0;
+}
+
+.egitim .items .item{
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 0.3px solid gray;
+    font-size: 0.8rem;
+}
+
+.egitim .items .item i{
+    padding: 0.7rem;
+}
+
+.item h3 {
+    font-size: 1rem;
+    padding: 0;
+}
