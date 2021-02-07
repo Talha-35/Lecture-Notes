@@ -71,6 +71,7 @@ body {
 } */
 
 /* ayrıca absolute özelliğini iki alan içinde de kullanabiliriz. eğer üstteki alana relativ veya fix verir isek altaki alana absolute dediğimiz de altaki alana konumunu artık üstteki alanaa göre alır. yani siz üstteki alanı sayfanın ortasına getirsenizo da gelir */
+/* ama burada eğer absolute kullanacak isek default olan static kalmaması lazm. illaki ya fixed ya da relativ olması lazım.eğer bunu kullanmaz isek o zaman üstteki kutuyu baz almaz bir üstündeki parent a göre konum alır */
 
 #kutu7 {
   background-color: rgb(0, 140, 255);
