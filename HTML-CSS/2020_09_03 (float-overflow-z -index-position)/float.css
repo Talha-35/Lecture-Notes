@@ -34,7 +34,10 @@ ikisi de - Sol veya sağ tarafta yüzen öğelere izin verilmez
 miras - Öğe, üst öğesinin net değerini devralır
 */
 
-/* clear özelliğini html içine boş element oluşturup içine style clear vererek de yapabiliriz */
+/* clear özelliğini float resimlerinden hemen sonra html içine boş element oluşturup içine style clear vererek de yapabiliriz */
+/* örnek : <div style="clear:both"></div> */
+/* örnek : <div style="clear:left"></div> */
+/* örnek : <div style="clear:right"></div> */
 
 
 /* p{
