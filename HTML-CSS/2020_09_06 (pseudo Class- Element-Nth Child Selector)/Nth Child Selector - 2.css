@@ -1,0 +1,56 @@
+/* p:nth-child(1) {
+    color: blueviolet;
+} */
+/* bu şekilde birinci çocuk seçilebilir */
+
+/* p:nth-child(3) {
+    background-color: red;
+    color: blueviolet;
+} */
+/* bu şekilde üçüncü çocuk seçilebilir */
+
+/* p:first-child {
+    background-color: yellow;
+    
+} */
+/* bu şekilde ilk çocuk seçilebilir */
+
+/* p:last-child {
+    background-color: yellow;
+    
+} */
+/* bu şekilde son çocuk seçilebilir */
+
+/* p:nth-child(even) {
+    color: red;
+} */
+/* bu şekilde çift çocuklar seçilebilir */
+
+/* p:nth-child(odd) {
+    color: blue;
+} */
+/* bu şekilde tek çocuklar seçilebilir */
+
+
+/* n = 0 */
+
+ul li:nth-child(2n) {
+    background-color: chartreuse;
+}
+/* n = 0 olduğu için bu şekilde çift çocuklar seçilebilir */
+
+ul li:nth-child(2n + 1) {
+    background-color: rgb(201, 103, 193);
+}
+/* n = 0 olduğu için + 1 diyerek bu şekilde tek çocuklar seçilebilir */
+
+ul li:nth-child(n + 5) {
+    background-color: rgb(0, 0, 0);
+    color: darkgray;
+}
+/* n = 0 olduğu için + 5 diyerek bu şekilde 5. satırdan sonraki çocuklar seçilebilir */
+
+ul li {
+    list-style-type: none;
+}
+/* bu şekilde listedeki noktalar silinebilir */
