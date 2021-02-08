@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" media="(min-width:1600px)" href="css/big.css" />
     <link rel="stylesheet" media="(max-width:768px)" href="css/tablet.css" />
     <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css" />
     <title>Talha Webpage</title>
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -18,38 +27,185 @@
           <h1>Talha ÜLKÜMEN</h1>
           <ul>
             <li><a href="#">Ana Sayfa</a></li>
-            <li><a href="#">Eğitim</a></li>
-            <li><a href="#">Seyahat</a></li>
-            <li><a href="#">İletişim</a></li>
+            <li><a href="#egitim-container">Eğitim</a></li>
+            <li><a href="#courses-container">Kurslar</a></li>
+            <li><a href="#footer">İletişim</a></li>
           </ul>
         </div>
       </div>
     </header>
+
     <section class="home">
       <img src="./images/profil.jpg" alt="Taha Ülkümen" />
       <h2>Talha ÜLKÜMEN</h2>
       <p>Full Stack Developer</p>
       <a href="#">Eğitimler</a>
     </section>
-    <section class="egitim">
-        <h2>Eğitimler</h2>
-        <div class="items">
-            <article class="item">
-                <i class="fa fa-pencil-alt"></i>
-                <h3>Sınıf İçi Eğitimler</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consectetur at laborum officia omnis atque natus ea id accusamus dolore.</p>
-            </article>
-            <article class="item">
-                <i class="fa fa-pencil-alt"></i>
-                <h3>Online Eğitimler</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consectetur at laborum officia omnis atque natus ea id accusamus dolore.</p>
-            </article>
-            <article class="item">
-                <i class="fa fa-pencil-alt"></i>
-                <h3>Konferanslar</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consectetur at laborum officia omnis atque natus ea id accusamus dolore.</p>
-            </article>
-        </div>
+    <section id="#egitim-container" class="egitim">
+      <h2>Eğitimler</h2>
+      <div class="items">
+        <article class="item">
+          <i class="fa fa-pencil-alt"></i>
+          <h3>Sınıf İçi Eğitimler</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            consectetur at laborum officia omnis atque natus ea id accusamus
+            dolore.
+          </p>
+        </article>
+        <article class="item">
+          <i class="fa fa-pencil-alt"></i>
+          <h3>Online Eğitimler</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            consectetur at laborum officia omnis atque natus ea id accusamus
+            dolore.
+          </p>
+        </article>
+        <article class="item">
+          <i class="fa fa-pencil-alt"></i>
+          <h3>Konferanslar</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            consectetur at laborum officia omnis atque natus ea id accusamus
+            dolore.
+          </p>
+        </article>
+      </div>
     </section>
+
+    <section id="courses-container" class="courses-container">
+      <div class="courses">
+        <div class="course">
+          <div class="image">
+            <img src="./images/python.jpg" alt="Python" />
+            <span class="indirim">%75 indirim</span>
+          </div>
+          <div class="container-title">
+            <div class="title">40 saatlik Python Eğitimi</div>
+            <div class="desc">
+              Ömür boyu iletişim imkanı ile python öğrenmek ister misiniz ?
+              Alanında uzman eğitmenlerimiz ile başarıya emin adımlar ile
+              ulaşacaksınız. Başarı bizim işimiz...Sizden istediğimiz tek şey
+              bize güvenmeniz ve düzenli çalışmanızdır.
+            </div>
+            <div class="author">Talha Ülkümen</div>
+          </div>
+        </div>
+
+        <div class="course">
+          <div class="image">
+            <img src="./images/java.png" alt="Java" />
+            <span class="indirim">%55 indirim</span>
+          </div>
+          <div class="container-title">
+            <div class="title">40 saatlik Java Eğitimi</div>
+            <div class="desc">
+              Ömür boyu iletişim imkanı ile python öğrenmek ister misiniz ?
+              Alanında uzman eğitmenlerimiz ile başarıya emin adımlar ile
+              ulaşacaksınız. Başarı bizim işimiz...Sizden istediğimiz tek şey
+              bize güvenmeniz ve düzenli çalışmanızdır.
+            </div>
+            <div class="author">Talha Ülkümen</div>
+          </div>
+        </div>
+
+        <div class="course">
+          <div class="image">
+            <img src="./images/node.png" alt="NodeJs" />
+            <span class="indirim">%85 indirim</span>
+          </div>
+          <div class="container-title">
+            <div class="title">40 saatlik NodeJs Eğitimi</div>
+            <div class="desc">
+              Ömür boyu iletişim imkanı ile python öğrenmek ister misiniz ?
+              Alanında uzman eğitmenlerimiz ile başarıya emin adımlar ile
+              ulaşacaksınız. Başarı bizim işimiz...Sizden istediğimiz tek şey
+              bize güvenmeniz ve düzenli çalışmanızdır.
+            </div>
+            <div class="author">Talha Ülkümen</div>
+          </div>
+        </div>
+
+        <div class="course">
+          <div class="image">
+            <img src="./images/react.png" alt="React" />
+            <span class="indirim">%30 indirim</span>
+          </div>
+          <div class="container-title">
+            <div class="title">40 saatlik React Eğitimi</div>
+            <div class="desc">
+              Ömür boyu iletişim imkanı ile python öğrenmek ister misiniz ?
+              Alanında uzman eğitmenlerimiz ile başarıya emin adımlar ile
+              ulaşacaksınız. Başarı bizim işimiz...Sizden istediğimiz tek şey
+              bize güvenmeniz ve düzenli çalışmanızdır.
+            </div>
+            <div class="author">Talha Ülkümen</div>
+          </div>
+        </div>
+
+        <div class="course">
+          <div class="image">
+            <img src="./images/mongo.png" alt="Mongo" />
+            <span class="indirim">%75 indirim</span>
+          </div>
+          <div class="container-title">
+            <div class="title">40 saatlik MongoDB Eğitimi</div>
+            <div class="desc">
+              Ömür boyu iletişim imkanı ile python öğrenmek ister misiniz ?
+              Alanında uzman eğitmenlerimiz ile başarıya emin adımlar ile
+              ulaşacaksınız. Başarı bizim işimiz...Sizden istediğimiz tek şey
+              bize güvenmeniz ve düzenli çalışmanızdır.
+            </div>
+            <div class="author">Talha Ülkümen</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <h3>Bana Ulaşın</h3>
+
+        <div class="input-container">
+          <div class="isim-container">
+            <label for="isim">İsim</label>
+            <input
+              id="isim"
+              type="text"
+              class="isim"
+              placeholder="İsim yazınız"
+            />
+          </div>
+          <div class="email-container">
+            <label for="email">E-Mail</label>
+            <input
+              id="email"
+              type="email"
+              class="email"
+              placeholder="Mail yazınız"
+            />
+          </div>
+          <div class="mesaj-container">
+            <label for="mesaj">Mesaj</label>
+            <input
+              id="mesaj"
+              type="text"
+              class="mesaj"
+              placeholder="Mesajınızı yazınız"
+            />
+          </div>
+          <button>Gönder</button>
+          <div class="icon-container">
+            <!-- <i class="fab fa-facebook-square fa-3x" ></i>
+            <i class="fab fa-instagram-square fa-3x"></i>
+            <i class="fab fa-twitter-square fa-3x"></i> -->
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x" ></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square fa-3x" ></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square fa-3x" ></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
