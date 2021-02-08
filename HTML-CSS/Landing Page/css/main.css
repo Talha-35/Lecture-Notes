@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
 a {
   text-decoration-line: none;
 }
@@ -44,7 +48,11 @@ a {
   font-weight: bold;
 }
 
+
+
 /* SECTİON */
+
+
 .home {
   display: flex;
   flex-direction: column;
@@ -85,6 +93,12 @@ a {
   border: 0.5px solid #004f98;
 }
 
+
+
+/* EĞİTİM */
+
+
+
 .egitim {
     background-color: #004f98;
     color: white;
@@ -115,4 +129,151 @@ a {
 
 .item h3 {
     padding: 0.5rem 0;
+}
+
+.courses-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+
+/* KURSLAR */
+
+
+.courses-container .courses{
+  padding: 1rem 2rem;
+}
+
+.courses-container .courses .course{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.courses-container .courses .course .image{
+  margin-right: 2rem;
+  position: relative;
+}
+
+.courses-container .courses .course .image img{
+  width: 250px;
+  height: 150px;
+}
+
+.courses-container .courses .course .image span{
+  position: absolute;
+  background-color: lightpink;
+  padding: 3px;
+  border-radius: 5px;
+  top: 10px;
+  left: 5px;
+}
+
+.courses-container .courses .course .container-title {
+ flex-direction: column;
+}
+
+.courses-container .courses .course .container-title:hover {
+ color: rgb(99, 7, 7);
+}
+
+.courses-container .courses .course .container-title .title{
+ font-weight: 700;
+ margin: 0.65rem 0;
+ letter-spacing: 1px;
+}
+
+.courses-container .courses .course .container-title .desc{
+  margin-bottom: 0.65rem;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.courses-container .courses .course .container-title .author{
+  margin-bottom: 0.45rem;
+  opacity: 0.7;
+}
+
+
+/* FOOTER */
+
+
+.footer {
+  background-color: #004f98;
+  
+}
+.footer .footer-container  {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+.footer .footer-container h3  {
+  text-align: center;
+  padding: 0.8rem 0;
+}
+
+.footer .footer-container .input-container .isim-container {
+  display: flex;
+  flex-direction: column;  
+  margin-bottom: 0.8rem;
+}
+
+.footer .footer-container .input-container .isim-container .isim {
+  height: 35px;
+  border-radius: 5px;
+  border:none;
+  text-indent: 5px;
+}
+
+.footer .footer-container .input-container .email-container {
+  display: flex;
+  flex-direction: column;  
+  margin-bottom: 0.8rem;
+}
+
+
+.footer .footer-container .input-container .email-container .email {
+  height: 35px;
+  border-radius: 5px;
+  border:none;
+  text-indent: 5px;
+}
+
+.footer .footer-container .input-container .mesaj-container {
+  display: flex;
+  flex-direction: column;  
+  margin-bottom: 0.8rem;
+}
+
+.footer .footer-container .input-container .mesaj-container .mesaj {
+  height: 100px;
+  border-radius: 5px;
+  border:none;
+  text-indent: 5px;
+}
+
+.footer .footer-container .input-container button {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border:none;
+}
+
+.footer .footer-container .input-container .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer-container .input-container .icon-container a {
+  color: aliceblue;
+}
+
+.footer .footer-container .input-container .icon-container a:hover {
+  color: rgb(201, 88, 88);
+}
+
+.footer .footer-container .input-container .icon-container i {
+  margin: 0.8rem 0.5rem;
 }
